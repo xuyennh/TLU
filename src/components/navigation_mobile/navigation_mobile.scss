@@ -1,0 +1,112 @@
+.sidebar {
+	position: relative;
+}
+.nav-mobile {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000a3d;
+	overflow-x: hidden;
+	overflow-y: auto;
+	transform: translateX(-100%);
+	transition: all 0.2s ease-in;
+	z-index: 99999;
+}
+.nav-menu {
+	position: absolute;
+	left: 0;
+	list-style: none;
+	margin: 0;
+	padding: 30px;
+}
+.nav-menu__link {
+	color: $color-white;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 18px;
+	padding-top: 10px;
+	padding-bottom: 13px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-back-button {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	padding: 16px 0;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #1e2652;
+}
+// .nav-back-button::after {
+// 	content: '';
+// 	width: 100%;
+// 	height: 1px;
+// 	background-color: #1e2652;
+// 	margin: 10px 0;
+// }
+.nav-back-button a {
+	color: $color-secondary-dark;
+	font-size: 13px;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+}
+.nav-back-button a:before {
+	content: '';
+	width: 5px;
+	height: 5px;
+	margin-right: 8px;
+	border-top: 2px solid $color-secondary-dark;
+	border-left: 2px solid $color-secondary-dark;
+	transform: rotate(-45deg);
+}
+.nav-arrow {
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #ffffff;
+	border-left: 2px solid #ffffff;
+	transform: rotate(135deg);
+}
+
+.category-menu {
+	padding: 0;
+	margin: 0;
+	padding-top: 34px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding-bottom: 28px;
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #1e2652;
+	border-top: 1px solid #1e2652;
+}
+.category-menu li {
+	list-style: none;
+}
+.category-menu__link {
+	display: block;
+	padding-bottom: 10px;
+	color: $color-white;
+}
+.nav-actives {
+	transform: translateX(0%);
+}
+.nav-link {
+	padding: 0;
+	display: flex;
+	padding-top: 15px;
+	flex-direction: column;
+}
+.nav-link:after {
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: $color-white;
+	margin: 9px 0;
+}
+.nav-link a {
+	color: $color-white;
+	font-size: 14px;
+}

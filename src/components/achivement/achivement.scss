@@ -1,0 +1,31 @@
+.achievement {
+	padding-top: 40px;
+}
+.achievement__item {
+	font-weight: $font-bold;
+	@include media('<=sm') {
+		padding: 20px 0;
+		text-align: center;
+	}
+}
+.achievement__percent {
+	font-size: 70px;
+	@include media('<=sm') {
+		font-size: 50px;
+	}
+}
+.achievement__item p {
+	font-size: 16px;
+}
+.percent {
+	position: relative;
+}
+.percent:after {
+	content: '%';
+	position: absolute;
+	font-size: 54px;
+	padding-left: 40px;
+	@include media('<sm') {
+		font-size: 20px;
+	}
+}

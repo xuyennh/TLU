@@ -1,0 +1,7 @@
+.logo img {
+	width: auto;
+	@include pfs('height', (
+		1200px: 105px,
+		400px: 57px
+	));
+}

@@ -1,0 +1,42 @@
+.burger {
+	position: relative;
+	width: 20px;
+	height: 20px;
+}
+.burger div {
+	width: 100%;
+	height: 2px;
+	transition: all 0.3s ease;
+	background-color: $color-secondary;
+	position: absolute;
+	left: 0;
+}
+.line1 {
+	top: 1px;
+	transition-delay: 0s;
+}
+.line2 {
+	top: 50%;
+	transform: translate(0%, -50%);
+}
+.line3 {
+	bottom: 1px;
+	transition-delay: 0s;
+}
+
+.toggle .line1 {
+	top: 50%;
+	transform: translate(0, -50%) rotate(-45deg);
+	transition-delay: 0.2s;
+}
+.toggle .line2 {
+	opacity: 0;
+	transition-delay: 0s;
+	transform: translateX(100%);
+	transition: all 0.2s cubic-bezier(.47, -0.25, .26, .14);
+}
+.toggle .line3 {
+	bottom: 50%;
+	transform: translate(0, 50%) rotate(45deg);
+	transition-delay: 0.2s;
+}

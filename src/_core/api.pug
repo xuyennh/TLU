@@ -1,0 +1,312 @@
+-
+  const api = {
+    title: [
+      'Summertime beach',
+      'Game in the desert',
+      'Memorable holidays',
+      'Group you travel',
+      'Style you young',
+      'Happy before nature',
+      'Sweet taste, food',
+      'Trip and holidays',
+      'A taste of life'
+    ],
+    text: [
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet ut lacus a tincidunt. Quisque luctus nibh augue, non ultrices arcu molestie in. Integer finibus dolor lorem, tempor pretium lectus ornare a. Aenean velit turpis, condimentum et pellentesque quis, commodo eget erat. Fusce tortor justo, tempor eu turpis a, egestas euismod odio. Vivamus malesuada suscipit leo id viverra. Donec in risus eu odio porta consectetur. Aliquam hendrerit odio nibh, ut consectetur elit dignissim pretium. Ut ut dapibus nibh. Morbi a ex ut velit ornare tincidunt sit amet vitae ipsum.',
+      'Nam suscipit nisi risus, et porttitor metus molestie a. Phasellus id quam id turpis suscipit pretium. Maecenas ultrices, lacus ut accumsan maximus, odio augue rhoncus augue, vulputate maximus mi sapien sed nisl. Sed fermentum congue orci sed lacinia. Nulla nunc purus, consectetur eget rutrum et, rhoncus sit amet turpis. Vivamus sed justo at nisi mollis efficitur. Fusce dictum odio non leo iaculis, vitae malesuada lacus placerat. In sed eleifend elit. Suspendisse et efficitur velit, eget elementum nibh. Donec eu lacus suscipit, euismod mi a, dignissim turpis. Nullam tincidunt, dui quis sollicitudin posuere, est turpis porta ex, et posuere velit felis eget neque. Aenean ipsum diam, condimentum sed urna a, auctor rhoncus magna. Nam vel mauris molestie, vehicula turpis quis, tristique odio.',
+      'Curabitur elementum urna augue, eu porta purus gravida in. Cras consectetur, lorem a cursus vestibulum, ligula purus iaculis nulla, in dignissim risus turpis id justo. Sed eleifend ante et ligula eleifend ultricies. Fusce porta feugiat nisl, eget faucibus augue ultrices et. Nullam id leo fringilla, viverra est ut, faucibus lectus. Integer vel finibus ex, et convallis enim. Curabitur tristique convallis neque a eleifend. Donec mattis leo in velit scelerisque, sit amet ultricies erat mollis. Suspendisse potenti. Etiam commodo ipsum placerat, ornare libero a, consequat justo.',
+      'Suspendisse ac elit vitae est lacinia interdum eu sit amet mauris. Phasellus aliquam nisi sit amet libero mattis ornare. In varius nunc vel suscipit rhoncus. Nunc hendrerit nisl nec orci eleifend accumsan. Mauris nulla mi, egestas ac maximus ac, ultricies non tellus. Vestibulum varius purus nunc. Cras malesuada diam elit, et efficitur urna elementum at. Nunc volutpat, nibh fringilla dictum euismod, augue diam rutrum risus, in ultricies metus quam ac tortor. Etiam commodo scelerisque mi, sed malesuada lectus tincidunt a. Nullam nibh ex, pulvinar nec elementum ac, feugiat a justo. Nam vitae leo vel odio consequat sollicitudin eu non purus. Sed risus neque, aliquet in risus non, porttitor rhoncus tellus. Morbi et fermentum neque, vel malesuada urna. Morbi faucibus at nisl a vehicula. Praesent orci justo, ullamcorper eget placerat et, feugiat sed augue.',
+      'Mauris lacinia venenatis dolor sit amet viverra. Integer malesuada nulla neque. Sed rutrum ligula eu sagittis volutpat. Aliquam erat volutpat. Praesent mattis non nulla eget tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer accumsan tellus sed purus hendrerit gravida. Quisque felis sapien, dictum at metus ut, semper tincidunt enim. Donec porttitor, dui et convallis vestibulum, ante turpis faucibus sapien, quis rhoncus sapien ante sed nulla. Phasellus aliquet arcu at magna ultricies vestibulum.',
+      'Maecenas lorem ex, euismod eget pulvinar non, facilisis ut leo. Quisque placerat purus in neque efficitur ornare. Nam at justo magna. Aliquam venenatis odio ante, non euismod augue porttitor eget. Maecenas nec viverra eros, eget euismod felis. Integer cursus libero sed lorem euismod, vel iaculis felis placerat. Pellentesque augue lacus, sodales et eros sed, molestie rhoncus ligula. Vivamus sed massa lorem. Suspendisse mollis lectus nec ex fermentum, in consectetur dolor egestas. Phasellus quis ipsum quis nisl ultricies sollicitudin id in dolor. Proin at consequat dui.',
+      'Sed ante nisl, fermentum et facilisis in, maximus sed ipsum. Cras hendrerit feugiat eros, ut fringilla nunc finibus sed. Quisque vitae dictum augue, vitae pretium sem. Proin tristique lobortis mauris nec mollis. Mauris id nibh sem. Vivamus ac ligula ac erat ultricies cursus semper ac enim. Aenean ac fringilla lectus. Praesent aliquet, metus eget varius pretium, purus erat commodo magna, ut porta nisl eros non mi. Fusce leo dui, porttitor sed odio in, eleifend ullamcorper nisl. Pellentesque vitae leo at elit convallis commodo vitae sit amet massa. Nunc a est eros. Nunc lectus risus, iaculis sed sem vitae, bibendum dapibus lectus. Vivamus tempor mauris et ligula venenatis, vitae porttitor tellus rutrum. Praesent eget auctor nisl, id auctor tortor. Donec consequat malesuada justo fringilla pharetra.',
+      'Nam elit ligula, egestas et ornare non, viverra eu justo. Aliquam ornare lectus ut pharetra dictum. Aliquam erat volutpat. In fringilla erat at eros pharetra faucibus. Nunc a magna eu lectus fringilla interdum luctus vitae diam. Morbi ac orci ac dolor pellentesque interdum vel accumsan risus. In vestibulum mattis turpis nec rhoncus. Maecenas facilisis commodo nunc, in blandit sem rutrum ac. Integer sit amet vehicula sem. Sed dictum arcu sit amet eros tempus pretium. Aenean lobortis risus purus.',
+      'Integer placerat ullamcorper urna nec rhoncus. Sed velit justo, lacinia non sapien imperdiet, sagittis fringilla risus. Nulla in est lobortis massa consectetur scelerisque. Etiam eu metus leo. Mauris a maximus magna. Maecenas odio tortor, tincidunt non lacus a, congue imperdiet diam. Pellentesque in euismod mauris. Suspendisse potenti. Aliquam nibh purus, malesuada quis dolor sed, interdum interdum nunc. Suspendisse rhoncus pulvinar dolor sit amet rutrum. Mauris ut arcu et lorem posuere aliquet vitae eu dolor. Fusce sagittis metus vitae pulvinar porta. Vestibulum vehicula ipsum nec purus varius aliquam. Nunc feugiat malesuada justo, vel eleifend libero efficitur ac. Etiam vitae molestie turpis, et eleifend augue. Sed quis sollicitudin elit.',
+      'Etiam non varius justo, vel tempor mi. Nulla facilisi. Fusce at tortor arcu. Suspendisse maximus ac nisl eu porta. Praesent eget consequat nisi, at mollis turpis. Quisque sed venenatis neque, at mollis magna. Nullam quis interdum augue, non feugiat leo. Mauris efficitur porta maximus. Curabitur auctor bibendum dui et vestibulum. Etiam at tristique magna, ut aliquam ligula. Pellentesque vel mauris ac ante molestie lacinia. Sed eros mi, laoreet quis magna quis, tristique tempor nunc. Aliquam ultricies accumsan luctus. Fusce ut finibus nunc. Sed porta libero tellus, id malesuada metus scelerisque at. Aliquam erat volutpat.',
+      'Duis porttitor libero ac egestas euismod. Maecenas quis felis turpis. Nulla quis turpis sed augue egestas dapibus vel at nibh. Nullam at justo at arcu egestas laoreet. Integer nunc mauris, interdum sit amet massa in, luctus vehicula lectus. Fusce ut luctus dui. Ut et arcu vitae nulla sagittis lobortis. Integer fringilla nisl sed justo interdum efficitur. Proin id mauris est. Quisque mattis nibh ornare ex venenatis commodo hendrerit vel risus. Nunc tempor a enim vel mattis. Suspendisse potenti.'
+    ],
+    address: [
+      'Vinh Bao, Hai Phong, Viet Nam',
+      'New York, NY, USA',
+      'Westfield, New Jersey 07090, USA',
+      'Division No. 10, Subd. D, Newfoundland and Labrador, Canada',
+      'Acupuncturist Prestwich Manchester, Manchester, UK'
+    ],
+    work: [
+      'Designer',
+      'Developer',
+      'Photography',
+      'CEO & Founder',
+      'Tester',
+      'Support'
+    ],
+    people: {
+      name: [
+        'Rachel Wagner',
+        'Ashley Mills',
+        'Bryan Ryan',
+        'Brandon Hanson',
+        'Brittany Williams',
+        'Alice Brooks',
+        'Alan Lane',
+        'Cynthia Aguilar',
+        'Daniel Ramirez',
+        'Helen Lane',
+        'Maria Gutierrez',
+        'Olivia Ryan',
+        'Jose Snyder',
+        'Bruce Powell',
+        'Ann Fowler',
+        'Sean Coleman',
+        'Roger Burke',
+        'Raymond Mendoza'
+      ],
+
+      avatar: [
+        'img/avatar/1.jpg',
+        'img/avatar/2.jpg',
+        'img/avatar/3.jpg',
+        'img/avatar/4.jpg',
+        'img/avatar/5.jpg',
+        'img/avatar/6.jpg',
+        'img/avatar/7.jpg',
+        'img/avatar/8.jpg',
+        'img/avatar/9.jpg',
+        'img/avatar/10.jpg',
+        'img/avatar/11.jpg',
+        'img/avatar/12.jpg',
+        'img/avatar/13.jpg',
+        'img/avatar/14.jpg',
+        'img/avatar/15.jpg',
+        'img/avatar/16.jpg',
+        'img/avatar/17.jpg',
+        'img/avatar/18.jpg',
+        'img/avatar/20.jpg'
+      ]
+    },
+    continental: [
+      'Asia',
+      'Africa',
+      'North America',
+      'South America',
+      'Euro',
+      'Australia'
+    ],
+    country: [
+      "Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua & Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia & Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cruise Ship","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea"
+      ,"Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kuwait","Kyrgyz Republic","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Mauritania","Mauritius","Mexico","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Namibia","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","Norway","Oman","Pakistan","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre & Miquelon","Samoa","San Marino","Satellite","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","South Africa","South Korea","Spain","Sri Lanka","St Kitts & Nevis","St Lucia","St Vincent","St. Lucia","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Turks & Caicos","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","United States Minor Outlying Islands","Uruguay","Uzbekistan","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"
+    ],
+    font7: [
+      'pe-7s-album','pe-7s-arc','pe-7s-back-2','pe-7s-bandaid','pe-7s-car','pe-7s-diamond','pe-7s-door-lock','pe-7s-eyedropper','pe-7s-female','pe-7s-gym','pe-7s-hammer','pe-7s-headphones','pe-7s-helm','pe-7s-hourglass','pe-7s-leaf','pe-7s-magic-wand','pe-7s-male','pe-7s-map-2','pe-7s-next-2','pe-7s-paint-bucket','pe-7s-pendrive','pe-7s-photo','pe-7s-piggy','pe-7s-plugin','pe-7s-refresh-2','pe-7s-rocket','pe-7s-settings','pe-7s-shield','pe-7s-smile','pe-7s-usb','pe-7s-vector','pe-7s-wine','pe-7s-cloud-upload','pe-7s-cash','pe-7s-close','pe-7s-bluetooth','pe-7s-cloud-download','pe-7s-way','pe-7s-close-circle','pe-7s-id','pe-7s-wristwatch','pe-7s-angle-up-circle','pe-7s-world','pe-7s-volume','pe-7s-users','pe-7s-user-female','pe-7s-switch','pe-7s-angle-down-circle','pe-7s-scissors','pe-7s-wallet','pe-7s-safe','pe-7s-volume2','pe-7s-volume1','pe-7s-voicemail','pe-7s-video','pe-7s-user','pe-7s-upload','pe-7s-unlock','pe-7s-umbrella','pe-7s-trash','pe-7s-tools','pe-7s-timer','pe-7s-ticket','pe-7s-target','pe-7s-sun','pe-7s-study','pe-7s-stopwatch','pe-7s-star','pe-7s-speaker','pe-7s-signal','pe-7s-shuffle','pe-7s-shopbag','pe-7s-share','pe-7s-server','pe-7s-search','pe-7s-film','pe-7s-science','pe-7s-disk','pe-7s-ribbon','pe-7s-repeat','pe-7s-refresh','pe-7s-add-user','pe-7s-refresh-cloud','pe-7s-paperclip','pe-7s-radio','pe-7s-note2','pe-7s-print','pe-7s-network','pe-7s-prev','pe-7s-mute','pe-7s-power','pe-7s-medal','pe-7s-portfolio','pe-7s-like2','pe-7s-plus','pe-7s-left-arrow','pe-7s-play','pe-7s-key','pe-7s-plane','pe-7s-joy','pe-7s-photo-gallery','pe-7s-pin','pe-7s-phone','pe-7s-plug','pe-7s-pen','pe-7s-right-arrow','pe-7s-paper-plane','pe-7s-delete-user','pe-7s-paint','pe-7s-bottom-arrow','pe-7s-notebook','pe-7s-note','pe-7s-next','pe-7s-news-paper','pe-7s-musiclist','pe-7s-music','pe-7s-mouse','pe-7s-more','pe-7s-moon','pe-7s-monitor','pe-7s-micro','pe-7s-menu','pe-7s-map','pe-7s-map-marker','pe-7s-mail','pe-7s-mail-open','pe-7s-mail-open-file','pe-7s-magnet','pe-7s-loop','pe-7s-look','pe-7s-lock','pe-7s-lintern','pe-7s-link','pe-7s-like','pe-7s-light','pe-7s-keypad','pe-7s-junk','pe-7s-info','pe-7s-home','pe-7s-help2','pe-7s-help1','pe-7s-graph3','pe-7s-graph2','pe-7s-graph1','pe-7s-graph','pe-7s-global','pe-7s-gleam','pe-7s-glasses','pe-7s-gift','pe-7s-folder','pe-7s-flag','pe-7s-filter','pe-7s-file','pe-7s-expand1','pe-7s-exapnd2','pe-7s-edit','pe-7s-drop','pe-7s-drawer','pe-7s-download','pe-7s-display2','pe-7s-display1','pe-7s-diskette','pe-7s-date','pe-7s-cup','pe-7s-culture','pe-7s-crop','pe-7s-credit','pe-7s-copy-file','pe-7s-config','pe-7s-compass','pe-7s-comment','pe-7s-coffee','pe-7s-cloud','pe-7s-clock','pe-7s-check','pe-7s-chat','pe-7s-cart','pe-7s-camera','pe-7s-call','pe-7s-calculator','pe-7s-browser','pe-7s-box2','pe-7s-box1','pe-7s-bookmarks','pe-7s-bicycle','pe-7s-bell','pe-7s-battery','pe-7s-ball','pe-7s-back','pe-7s-attention','pe-7s-anchor','pe-7s-albums','pe-7s-alarm','pe-7s-airplay'
+    ],
+    fontawesome: [
+      'fa fa-address-book','fa fa-address-book-o','fa fa-address-card','fa fa-address-card-o','fa fa-adjust','fa fa-adn','fa fa-align-center','fa fa-align-justify','fa fa-align-left','fa fa-align-right','fa fa-amazon','fa fa-ambulance','fa fa-american-sign-language-interpreting','fa fa-anchor','fa fa-android','fa fa-angellist','fa fa-angle-double-down','fa fa-angle-double-left','fa fa-angle-double-right','fa fa-angle-double-up','fa fa-angle-down','fa fa-angle-left','fa fa-angle-right','fa fa-angle-up','fa fa-apple','fa fa-archive','fa fa-area-chart','fa fa-arrow-circle-down','fa fa-arrow-circle-left','fa fa-arrow-circle-o-down','fa fa-arrow-circle-o-left','fa fa-arrow-circle-o-right','fa fa-arrow-circle-o-up','fa fa-arrow-circle-right','fa fa-arrow-circle-up','fa fa-arrow-down','fa fa-arrow-left','fa fa-arrow-right','fa fa-arrow-up','fa fa-arrows','fa fa-arrows-alt','fa fa-arrows-h','fa fa-arrows-v','fa fa-asl-interpreting','fa fa-assistive-listening-systems','fa fa-asterisk','fa fa-at','fa fa-audio-description','fa fa-automobile','fa fa-backward','fa fa-balance-scale','fa fa-ban','fa fa-bandcamp','fa fa-bank','fa fa-bar-chart','fa fa-bar-chart-o','fa fa-barcode','fa fa-bars','fa fa-bath','fa fa-bathtub','fa fa-battery','fa fa-battery-0','fa fa-battery-1','fa fa-battery-2','fa fa-battery-3','fa fa-battery-4','fa fa-battery-empty','fa fa-battery-full','fa fa-battery-half','fa fa-battery-quarter','fa fa-battery-three-quarters','fa fa-bed','fa fa-beer','fa fa-behance','fa fa-behance-square','fa fa-bell','fa fa-bell-o','fa fa-bell-slash','fa fa-bell-slash-o','fa fa-bicycle','fa fa-binoculars','fa fa-birthday-cake','fa fa-bitbucket','fa fa-bitbucket-square','fa fa-bitcoin','fa fa-black-tie','fa fa-blind','fa fa-bluetooth','fa fa-bluetooth-b','fa fa-bold','fa fa-bolt','fa fa-bomb','fa fa-book','fa fa-bookmark','fa fa-bookmark-o','fa fa-braille','fa fa-briefcase','fa fa-btc','fa fa-bug','fa fa-building','fa fa-building-o','fa fa-bullhorn','fa fa-bullseye','fa fa-bus','fa fa-buysellads','fa fa-cab','fa fa-calculator','fa fa-calendar','fa fa-calendar-check-o','fa fa-calendar-minus-o','fa fa-calendar-o','fa fa-calendar-plus-o','fa fa-calendar-times-o','fa fa-camera','fa fa-camera-retro','fa fa-car','fa fa-caret-down','fa fa-caret-left','fa fa-caret-right','fa fa-caret-square-o-down','fa fa-caret-square-o-left','fa fa-caret-square-o-right','fa fa-caret-square-o-up','fa fa-caret-up','fa fa-cart-arrow-down','fa fa-cart-plus','fa fa-cc','fa fa-cc-amex','fa fa-cc-diners-club','fa fa-cc-discover','fa fa-cc-jcb','fa fa-cc-mastercard','fa fa-cc-paypal','fa fa-cc-stripe','fa fa-cc-visa','fa fa-certificate','fa fa-chain','fa fa-chain-broken','fa fa-check','fa fa-check-circle','fa fa-check-circle-o','fa fa-check-square','fa fa-check-square-o','fa fa-chevron-circle-down','fa fa-chevron-circle-left','fa fa-chevron-circle-right','fa fa-chevron-circle-up','fa fa-chevron-down','fa fa-chevron-left','fa fa-chevron-right','fa fa-chevron-up','fa fa-child','fa fa-chrome','fa fa-circle','fa fa-circle-o','fa fa-circle-o-notch','fa fa-circle-thin','fa fa-clipboard','fa fa-clock-o','fa fa-clone','fa fa-close','fa fa-cloud','fa fa-cloud-download','fa fa-cloud-upload','fa fa-cny','fa fa-code','fa fa-code-fork','fa fa-codepen','fa fa-codiepie','fa fa-coffee','fa fa-cog','fa fa-cogs','fa fa-columns','fa fa-comment','fa fa-comment-o','fa fa-commenting','fa fa-commenting-o','fa fa-comments','fa fa-comments-o','fa fa-compass','fa fa-compress','fa fa-connectdevelop','fa fa-contao','fa fa-copy','fa fa-copyright','fa fa-creative-commons','fa fa-credit-card','fa fa-credit-card-alt','fa fa-crop','fa fa-crosshairs','fa fa-css3','fa fa-cube','fa fa-cubes','fa fa-cut','fa fa-cutlery','fa fa-dashboard','fa fa-dashcube','fa fa-database','fa fa-deaf','fa fa-deafness','fa fa-dedent','fa fa-delicious','fa fa-desktop','fa fa-deviantart','fa fa-diamond','fa fa-digg','fa fa-dollar','fa fa-dot-circle-o','fa fa-download','fa fa-dribbble','fa fa-drivers-license','fa fa-drivers-license-o','fa fa-dropbox','fa fa-drupal','fa fa-edge','fa fa-edit','fa fa-eercast','fa fa-eject','fa fa-ellipsis-h','fa fa-ellipsis-v','fa fa-empire','fa fa-envelope','fa fa-envelope-o','fa fa-envelope-open','fa fa-envelope-open-o','fa fa-envelope-square','fa fa-envira','fa fa-eraser','fa fa-etsy','fa fa-eur','fa fa-euro','fa fa-exchange','fa fa-exclamation','fa fa-exclamation-circle','fa fa-exclamation-triangle','fa fa-expand','fa fa-expeditedssl','fa fa-external-link','fa fa-external-link-square','fa fa-eye','fa fa-eye-slash','fa fa-eyedropper','fa fa-fa','fa fa-facebook','fa fa-facebook-f','fa fa-facebook-official','fa fa-facebook-square','fa fa-fast-backward','fa fa-fast-forward','fa fa-fax','fa fa-feed','fa fa-female','fa fa-fighter-jet','fa fa-file','fa fa-file-archive-o','fa fa-file-audio-o','fa fa-file-code-o','fa fa-file-excel-o','fa fa-file-image-o','fa fa-file-movie-o','fa fa-file-o','fa fa-file-pdf-o','fa fa-file-photo-o','fa fa-file-picture-o','fa fa-file-powerpoint-o','fa fa-file-sound-o','fa fa-file-text','fa fa-file-text-o','fa fa-file-video-o','fa fa-file-word-o','fa fa-file-zip-o','fa fa-files-o','fa fa-film','fa fa-filter','fa fa-fire','fa fa-fire-extinguisher','fa fa-firefox','fa fa-first-order','fa fa-flag','fa fa-flag-checkered','fa fa-flag-o','fa fa-flash','fa fa-flask','fa fa-flickr','fa fa-floppy-o','fa fa-folder','fa fa-folder-o','fa fa-folder-open','fa fa-folder-open-o','fa fa-font','fa fa-font-awesome','fa fa-fonticons','fa fa-fort-awesome','fa fa-forumbee','fa fa-forward','fa fa-foursquare','fa fa-free-code-camp','fa fa-frown-o','fa fa-futbol-o','fa fa-gamepad','fa fa-gavel','fa fa-gbp','fa fa-ge','fa fa-gear','fa fa-gears','fa fa-genderless','fa fa-get-pocket','fa fa-gg','fa fa-gg-circle','fa fa-gift','fa fa-git','fa fa-git-square','fa fa-github','fa fa-github-alt','fa fa-github-square','fa fa-gitlab','fa fa-gittip','fa fa-glass','fa fa-glide','fa fa-glide-g','fa fa-globe','fa fa-google','fa fa-google-plus','fa fa-google-plus-circle','fa fa-google-plus-official','fa fa-google-plus-square','fa fa-google-wallet','fa fa-graduation-cap','fa fa-gratipay','fa fa-grav','fa fa-group','fa fa-h-square','fa fa-hacker-news','fa fa-hand-grab-o','fa fa-hand-lizard-o','fa fa-hand-o-down','fa fa-hand-o-left','fa fa-hand-o-right','fa fa-hand-o-up','fa fa-hand-paper-o','fa fa-hand-peace-o','fa fa-hand-pointer-o','fa fa-hand-rock-o','fa fa-hand-scissors-o','fa fa-hand-spock-o','fa fa-hand-stop-o','fa fa-handshake-o','fa fa-hard-of-hearing','fa fa-hashtag','fa fa-hdd-o','fa fa-header','fa fa-headphones','fa fa-heart','fa fa-heart-o','fa fa-heartbeat','fa fa-history','fa fa-home','fa fa-hospital-o','fa fa-hotel','fa fa-hourglass','fa fa-hourglass-1','fa fa-hourglass-2','fa fa-hourglass-3','fa fa-hourglass-end','fa fa-hourglass-half','fa fa-hourglass-o','fa fa-hourglass-start','fa fa-houzz','fa fa-html5','fa fa-i-cursor','fa fa-id-badge','fa fa-id-card','fa fa-id-card-o','fa fa-ils','fa fa-image','fa fa-imdb','fa fa-inbox','fa fa-indent','fa fa-industry','fa fa-info','fa fa-info-circle','fa fa-inr','fa fa-instagram','fa fa-institution','fa fa-internet-explorer','fa fa-intersex','fa fa-ioxhost','fa fa-italic','fa fa-joomla','fa fa-jpy','fa fa-jsfiddle','fa fa-key','fa fa-keyboard-o','fa fa-krw','fa fa-language','fa fa-laptop','fa fa-lastfm','fa fa-lastfm-square','fa fa-leaf','fa fa-leanpub','fa fa-legal','fa fa-lemon-o','fa fa-level-down','fa fa-level-up','fa fa-life-bouy','fa fa-life-buoy','fa fa-life-ring','fa fa-life-saver','fa fa-lightbulb-o','fa fa-line-chart','fa fa-link','fa fa-linkedin','fa fa-linkedin-square','fa fa-linode','fa fa-linux','fa fa-list','fa fa-list-alt','fa fa-list-ol','fa fa-list-ul','fa fa-location-arrow','fa fa-lock','fa fa-long-arrow-down','fa fa-long-arrow-left','fa fa-long-arrow-right','fa fa-long-arrow-up','fa fa-low-vision','fa fa-magic','fa fa-magnet','fa fa-mail-forward','fa fa-mail-reply','fa fa-mail-reply-all','fa fa-male','fa fa-map','fa fa-map-marker','fa fa-map-o','fa fa-map-pin','fa fa-map-signs','fa fa-mars','fa fa-mars-double','fa fa-mars-stroke','fa fa-mars-stroke-h','fa fa-mars-stroke-v','fa fa-maxcdn','fa fa-meanpath','fa fa-medium','fa fa-medkit','fa fa-meetup','fa fa-meh-o','fa fa-mercury','fa fa-microchip','fa fa-microphone','fa fa-microphone-slash','fa fa-minus','fa fa-minus-circle','fa fa-minus-square','fa fa-minus-square-o','fa fa-mixcloud','fa fa-mobile','fa fa-mobile-phone','fa fa-modx','fa fa-money','fa fa-moon-o','fa fa-mortar-board','fa fa-motorcycle','fa fa-mouse-pointer','fa fa-music','fa fa-navicon','fa fa-neuter','fa fa-newspaper-o','fa fa-object-group','fa fa-object-ungroup','fa fa-odnoklassniki','fa fa-odnoklassniki-square','fa fa-opencart','fa fa-openid','fa fa-opera','fa fa-optin-monster','fa fa-outdent','fa fa-pagelines','fa fa-paint-brush','fa fa-paper-plane','fa fa-paper-plane-o','fa fa-paperclip','fa fa-paragraph','fa fa-paste','fa fa-pause','fa fa-pause-circle','fa fa-pause-circle-o','fa fa-paw','fa fa-paypal','fa fa-pencil','fa fa-pencil-square','fa fa-pencil-square-o','fa fa-percent','fa fa-phone','fa fa-phone-square','fa fa-photo','fa fa-picture-o','fa fa-pie-chart','fa fa-pied-piper','fa fa-pied-piper-alt','fa fa-pied-piper-pp','fa fa-pinterest','fa fa-pinterest-p','fa fa-pinterest-square','fa fa-plane','fa fa-play','fa fa-play-circle','fa fa-play-circle-o','fa fa-plug','fa fa-plus','fa fa-plus-circle','fa fa-plus-square','fa fa-plus-square-o','fa fa-podcast','fa fa-power-off','fa fa-print','fa fa-product-hunt','fa fa-puzzle-piece','fa fa-qq','fa fa-qrcode','fa fa-question','fa fa-question-circle','fa fa-question-circle-o','fa fa-quora','fa fa-quote-left','fa fa-quote-right','fa fa-ra','fa fa-random','fa fa-ravelry','fa fa-rebel','fa fa-recycle','fa fa-reddit','fa fa-reddit-alien','fa fa-reddit-square','fa fa-refresh','fa fa-registered','fa fa-remove','fa fa-renren','fa fa-reorder','fa fa-repeat','fa fa-reply','fa fa-reply-all','fa fa-resistance','fa fa-retweet','fa fa-rmb','fa fa-road','fa fa-rocket','fa fa-rotate-left','fa fa-rotate-right','fa fa-rouble','fa fa-rss','fa fa-rss-square','fa fa-rub','fa fa-ruble','fa fa-rupee','fa fa-s15','fa fa-safari','fa fa-save','fa fa-scissors','fa fa-scribd','fa fa-search','fa fa-search-minus','fa fa-search-plus','fa fa-sellsy','fa fa-send','fa fa-send-o','fa fa-server','fa fa-share','fa fa-share-alt','fa fa-share-alt-square','fa fa-share-square','fa fa-share-square-o','fa fa-shekel','fa fa-sheqel','fa fa-shield','fa fa-ship','fa fa-shirtsinbulk','fa fa-shopping-bag','fa fa-shopping-basket','fa fa-shopping-cart','fa fa-shower','fa fa-sign-in','fa fa-sign-language','fa fa-sign-out','fa fa-signal','fa fa-signing','fa fa-simplybuilt','fa fa-sitemap','fa fa-skyatlas','fa fa-skype','fa fa-slack','fa fa-sliders','fa fa-slideshare','fa fa-smile-o','fa fa-snapchat','fa fa-snapchat-ghost','fa fa-snapchat-square','fa fa-snowflake-o','fa fa-soccer-ball-o','fa fa-sort','fa fa-sort-alpha-asc','fa fa-sort-alpha-desc','fa fa-sort-amount-asc','fa fa-sort-amount-desc','fa fa-sort-asc','fa fa-sort-desc','fa fa-sort-down','fa fa-sort-numeric-asc','fa fa-sort-numeric-desc','fa fa-sort-up','fa fa-soundcloud','fa fa-space-shuttle','fa fa-spinner','fa fa-spoon','fa fa-spotify','fa fa-square','fa fa-square-o','fa fa-stack-exchange','fa fa-stack-overflow','fa fa-star','fa fa-star-half','fa fa-star-half-empty','fa fa-star-half-full','fa fa-star-half-o','fa fa-star-o','fa fa-steam','fa fa-steam-square','fa fa-step-backward','fa fa-step-forward','fa fa-stethoscope','fa fa-sticky-note','fa fa-sticky-note-o','fa fa-stop','fa fa-stop-circle','fa fa-stop-circle-o','fa fa-street-view','fa fa-strikethrough','fa fa-stumbleupon','fa fa-stumbleupon-circle','fa fa-subscript','fa fa-subway','fa fa-suitcase','fa fa-sun-o','fa fa-superpowers','fa fa-superscript','fa fa-support','fa fa-table','fa fa-tablet','fa fa-tachometer','fa fa-tag','fa fa-tags','fa fa-tasks','fa fa-taxi','fa fa-telegram','fa fa-television','fa fa-tencent-weibo','fa fa-terminal','fa fa-text-height','fa fa-text-width','fa fa-th','fa fa-th-large','fa fa-th-list','fa fa-themeisle','fa fa-thermometer','fa fa-thermometer-0','fa fa-thermometer-1','fa fa-thermometer-2','fa fa-thermometer-3','fa fa-thermometer-4','fa fa-thermometer-empty','fa fa-thermometer-full','fa fa-thermometer-half','fa fa-thermometer-quarter','fa fa-thermometer-three-quarters','fa fa-thumb-tack','fa fa-thumbs-down','fa fa-thumbs-o-down','fa fa-thumbs-o-up','fa fa-thumbs-up','fa fa-ticket','fa fa-times','fa fa-times-circle','fa fa-times-circle-o','fa fa-times-rectangle','fa fa-times-rectangle-o','fa fa-tint','fa fa-toggle-down','fa fa-toggle-left','fa fa-toggle-off','fa fa-toggle-on','fa fa-toggle-right','fa fa-toggle-up','fa fa-trademark','fa fa-train','fa fa-transgender','fa fa-transgender-alt','fa fa-trash','fa fa-trash-o','fa fa-tree','fa fa-trello','fa fa-tripadvisor','fa fa-trophy','fa fa-truck','fa fa-try','fa fa-tty','fa fa-tumblr','fa fa-tumblr-square','fa fa-turkish-lira','fa fa-tv','fa fa-twitch','fa fa-twitter','fa fa-twitter-square','fa fa-umbrella','fa fa-underline','fa fa-undo','fa fa-universal-access','fa fa-university','fa fa-unlink','fa fa-unlock','fa fa-unlock-alt','fa fa-unsorted','fa fa-upload','fa fa-usb','fa fa-usd','fa fa-user','fa fa-user-circle','fa fa-user-circle-o','fa fa-user-md','fa fa-user-o','fa fa-user-plus','fa fa-user-secret','fa fa-user-times','fa fa-users','fa fa-vcard','fa fa-vcard-o','fa fa-venus','fa fa-venus-double','fa fa-venus-mars','fa fa-viacoin','fa fa-viadeo','fa fa-viadeo-square','fa fa-video-camera','fa fa-vimeo','fa fa-vimeo-square','fa fa-vine','fa fa-vk','fa fa-volume-control-phone','fa fa-volume-down','fa fa-volume-off','fa fa-volume-up','fa fa-warning','fa fa-wechat','fa fa-weibo','fa fa-weixin','fa fa-whatsapp','fa fa-wheelchair','fa fa-wheelchair-alt','fa fa-wifi','fa fa-wikipedia-w','fa fa-window-close','fa fa-window-close-o','fa fa-window-maximize','fa fa-window-minimize','fa fa-window-restore','fa fa-windows','fa fa-won','fa fa-wordpress','fa fa-wpbeginner','fa fa-wpexplorer','fa fa-wpforms','fa fa-wrench','fa fa-xing','fa fa-xing-square','fa fa-y-combinator','fa fa-y-combinator-square','fa fa-yahoo','fa fa-yc','fa fa-yc-square','fa fa-yelp','fa fa-yen','fa fa-yoast','fa fa-youtube','fa fa-youtube-play','fa fa-youtube-square'
+    ],
+    lineawesome: [
+      'la la-adjust','la la-anchor','la la-archive','la la-area-chart','la la-arrows','la la-arrows-h','la la-arrows-v','la la-asterisk','la la-at','la la-automobile','la la-balance-scale','la la-ban','la la-bank','la la-bar-chart','la la-bar-chart-o','la la-barcode','la la-bars','la la-battery-0','la la-battery-1','la la-battery-2','la la-battery-3','la la-battery-4','la la-battery-empty','la la-battery-full','la la-battery-half','la la-battery-quarter','la la-battery-three-quarters','la la-bed','la la-beer','la la-bell','la la-bell-o','la la-bell-slash','la la-bell-slash-o','la la-bicycle','la la-binoculars','la la-birthday-cake','la la-bolt','la la-bomb','la la-book','la la-bookmark','la la-bookmark-o','la la-briefcase','la la-bug','la la-building','la la-building-o','la la-bullhorn','la la-bullseye','la la-bus','la la-cab','la la-calculator','la la-calendar','la la-calendar-check-o','la la-calendar-minus-o','la la-calendar-o','la la-calendar-plus-o','la la-calendar-times-o','la la-camera','la la-camera-retro','la la-car','la la-caret-square-o-down','la la-caret-square-o-left','la la-caret-square-o-right','la la-caret-square-o-up','la la-cart-arrow-down','la la-cart-plus','la la-cc','la la-certificate','la la-check','la la-check-circle','la la-check-circle-o','la la-check-square','la la-check-square-o','la la-child','la la-circle','la la-circle-o','la la-circle-o-notch','la la-circle-thin','la la-clock-o','la la-clone','la la-close','la la-cloud','la la-cloud-download','la la-cloud-upload','la la-code','la la-code-fork','la la-coffee','la la-cog','la la-cogs','la la-comment','la la-comment-o','la la-commenting','la la-commenting-o','la la-comments','la la-comments-o','la la-compass','la la-copyright','la la-creative-commons','la la-credit-card','la la-crop','la la-crosshairs','la la-cube','la la-cubes','la la-cutlery','la la-dashboard','la la-database','la la-desktop','la la-diamond','la la-dot-circle-o','la la-download','la la-edit','la la-ellipsis-h','la la-ellipsis-v','la la-envelope','la la-envelope-o','la la-envelope-square','la la-eraser','la la-exchange','la la-exclamation','la la-exclamation-circle','la la-exclamation-triangle','la la-external-link','la la-external-link-square','la la-eye','la la-eye-slash','la la-eyedropper','la la-fax','la la-feed','la la-female','la la-fighter-jet','la la-file-archive-o','la la-file-audio-o','la la-file-code-o','la la-file-excel-o','la la-file-image-o','la la-file-movie-o','la la-file-pdf-o','la la-file-photo-o','la la-file-picture-o','la la-file-powerpoint-o','la la-file-sound-o','la la-file-video-o','la la-file-word-o','la la-file-zip-o','la la-film','la la-filter','la la-fire','la la-fire-extinguisher','la la-flag','la la-flag-checkered','la la-flag-o','la la-flash','la la-flask','la la-folder','la la-folder-o','la la-folder-open','la la-folder-open-o','la la-frown-o','la la-futbol-o','la la-gamepad','la la-gavel','la la-gear','la la-gears','la la-gift','la la-glass','la la-globe','la la-graduation-cap','la la-group','la la-hand-grab-o','la la-hand-lizard-o','la la-hand-paper-o','la la-hand-peace-o','la la-hand-pointer-o','la la-hand-rock-o','la la-hand-scissors-o','la la-hand-spock-o','la la-hand-stop-o','la la-hdd-o','la la-headphones','la la-heart','la la-heart-o','la la-heartbeat','la la-history','la la-home','la la-hotel','la la-hourglass','la la-hourglass-1','la la-hourglass-2','la la-hourglass-3','la la-hourglass-end','la la-hourglass-half','la la-hourglass-o','la la-hourglass-start','la la-i-cursor','la la-image','la la-inbox','la la-industry','la la-info','la la-info-circle','la la-institution','la la-key','la la-keyboard-o','la la-language','la la-laptop','la la-leaf','la la-legal','la la-lemon-o','la la-level-down','la la-level-up','la la-life-bouy','la la-life-buoy','la la-life-ring','la la-life-saver','la la-lightbulb-o','la la-line-chart','la la-location-arrow','la la-lock','la la-magic','la la-magnet','la la-mail-forward','la la-mail-reply','la la-mail-reply-all','la la-male','la la-map','la la-map-marker','la la-map-o','la la-map-pin','la la-map-signs','la la-meh-o','la la-microphone','la la-microphone-slash','la la-minus','la la-minus-circle','la la-minus-square','la la-minus-square-o','la la-mobile','la la-mobile-phone','la la-money','la la-moon-o','la la-mortar-board','la la-motorcycle','la la-mouse-pointer','la la-music','la la-navicon','la la-newspaper-o','la la-object-group','la la-object-ungroup','la la-paint-brush','la la-paper-plane','la la-paper-plane-o','la la-paw','la la-pencil','la la-pencil-square','la la-pencil-square-o','la la-phone','la la-phone-square','la la-photo','la la-picture-o','la la-pie-chart','la la-plane','la la-plug','la la-plus','la la-plus-circle','la la-plus-square','la la-plus-square-o','la la-power-off','la la-print','la la-puzzle-piece','la la-qrcode','la la-question','la la-question-circle','la la-quote-left','la la-quote-right','la la-random','la la-recycle','la la-refresh','la la-registered','la la-remove','la la-reorder','la la-reply','la la-reply-all','la la-retweet','la la-road','la la-rocket','la la-rss','la la-rss-square','la la-search','la la-search-minus','la la-search-plus','la la-send','la la-send-o','la la-server','la la-share','la la-share-alt','la la-share-alt-square','la la-share-square','la la-share-square-o','la la-shield','la la-ship','la la-shopping-cart','la la-sign-in','la la-sign-out','la la-signal','la la-sitemap','la la-sliders','la la-smile-o','la la-soccer-ball-o','la la-sort','la la-sort-alpha-asc','la la-sort-alpha-desc','la la-sort-amount-asc','la la-sort-amount-desc','la la-sort-asc','la la-sort-desc','la la-sort-down','la la-sort-numeric-asc','la la-sort-numeric-desc','la la-sort-up','la la-space-shuttle','la la-spinner','la la-spoon','la la-square','la la-square-o','la la-star','la la-star-half','la la-star-half-empty','la la-star-half-full','la la-star-half-o','la la-star-o','la la-sticky-note','la la-sticky-note-o','la la-street-view','la la-suitcase','la la-sun-o','la la-support','la la-tablet','la la-tachometer','la la-tag','la la-tags','la la-tasks','la la-taxi','la la-television','la la-terminal','la la-thumb-tack','la la-thumbs-down','la la-thumbs-o-down','la la-thumbs-o-up','la la-thumbs-up','la la-ticket','la la-times','la la-times-circle','la la-times-circle-o','la la-tint','la la-toggle-down','la la-toggle-left','la la-toggle-off','la la-toggle-on','la la-toggle-right','la la-toggle-up','la la-trademark','la la-trash','la la-trash-o','la la-tree','la la-trophy','la la-truck','la la-tty','la la-tv','la la-umbrella','la la-university','la la-unlock','la la-unlock-alt','la la-unsorted','la la-upload','la la-user','la la-user-plus','la la-user-secret','la la-user-times','la la-users','la la-video-camera','la la-volume-down','la la-volume-off','la la-volume-up','la la-warning','la la-wheelchair','la la-wifi','la la-wrench','la la-hand-o-down','la la-hand-o-left','la la-hand-o-right','la la-hand-o-up','la la-ambulance','la la-subway','la la-train','la la-genderless','la la-intersex','la la-mars','la la-mars-double','la la-mars-stroke','la la-mars-stroke-h','la la-mars-stroke-v','la la-mercury','la la-neuter','la la-transgender','la la-transgender-alt','la la-venus','la la-venus-double','la la-venus-mars','la la-file','la la-file-o','la la-file-text','la la-file-text-o','la la-cc-amex','la la-cc-diners-club','la la-cc-discover','la la-cc-jcb','la la-cc-mastercard','la la-cc-paypal','la la-cc-stripe','la la-cc-visa','la la-google-wallet','la la-paypal','la la-bitcoin','la la-btc','la la-cny','la la-dollar','la la-eur','la la-euro','la la-gbp','la la-gg','la la-gg-circle','la la-ils','la la-inr','la la-jpy','la la-krw','la la-rmb','la la-rouble','la la-rub','la la-ruble','la la-rupee','la la-shekel','la la-sheqel','la la-try','la la-turkish-lira','la la-usd','la la-won','la la-yen','la la-align-center','la la-align-justify','la la-align-left','la la-align-right','la la-bold','la la-chain','la la-chain-broken','la la-clipboard','la la-columns','la la-copy','la la-cut','la la-dedent','la la-files-o','la la-floppy-o','la la-font','la la-header','la la-indent','la la-italic','la la-link','la la-list','la la-list-alt','la la-list-ol','la la-list-ul','la la-outdent','la la-paperclip','la la-paragraph','la la-paste','la la-repeat','la la-rotate-left','la la-rotate-right','la la-save','la la-scissors','la la-strikethrough','la la-subscript','la la-superscript','la la-table','la la-text-height','la la-text-width','la la-th','la la-th-large','la la-th-list','la la-underline','la la-undo','la la-unlink','la la-angle-double-down','la la-angle-double-left','la la-angle-double-right','la la-angle-double-up','la la-angle-down','la la-angle-left','la la-angle-right','la la-angle-up','la la-arrow-circle-down','la la-arrow-circle-left','la la-arrow-circle-o-down','la la-arrow-circle-o-left','la la-arrow-circle-o-right','la la-arrow-circle-o-up','la la-arrow-circle-right','la la-arrow-circle-up','la la-arrow-down','la la-arrow-left','la la-arrow-right','la la-arrow-up','la la-arrows-alt','la la-caret-down','la la-caret-left','la la-caret-right','la la-caret-up','la la-chevron-circle-down','la la-chevron-circle-left','la la-chevron-circle-right','la la-chevron-circle-up','la la-chevron-down','la la-chevron-left','la la-chevron-right','la la-chevron-up','la la-long-arrow-down','la la-long-arrow-left','la la-long-arrow-right','la la-long-arrow-up','la la-backward','la la-compress','la la-eject','la la-expand','la la-fast-backward','la la-fast-forward','la la-forward','la la-pause','la la-play','la la-play-circle','la la-play-circle-o','la la-step-backward','la la-step-forward','la la-stop','la la-youtube-play','la la-500px','la la-adn','la la-amazon','la la-android','la la-angellist','la la-apple','la la-behance','la la-behance-square','la la-bitbucket','la la-bitbucket-square','la la-black-tie','la la-buysellads','la la-chrome','la la-codepen','la la-connectdevelop','la la-contao','la la-css3','la la-dashcube','la la-delicious','la la-deviantart','la la-digg','la la-dribbble','la la-dropbox','la la-drupal','la la-empire','la la-expeditedssl','la la-facebook','la la-facebook-f','la la-facebook-official','la la-facebook-square','la la-firefox','la la-flickr','la la-fonticons','la la-forumbee','la la-foursquare','la la-ge','la la-get-pocket','la la-git','la la-git-square','la la-github','la la-github-alt','la la-github-square','la la-gittip','la la-google','la la-google-plus','la la-google-plus-square','la la-gratipay','la la-hacker-news','la la-houzz','la la-html5','la la-instagram','la la-internet-explorer','la la-ioxhost','la la-joomla','la la-jsfiddle','la la-lastfm','la la-lastfm-square','la la-leanpub','la la-linkedin','la la-linkedin-square','la la-linux','la la-maxcdn','la la-meanpath','la la-medium','la la-odnoklassniki','la la-odnoklassniki-square','la la-opencart','la la-openid','la la-opera','la la-optin-monster','la la-pagelines','la la-pied-piper','la la-pied-piper-alt','la la-pinterest','la la-pinterest-p','la la-pinterest-square','la la-qq','la la-ra','la la-rebel','la la-reddit','la la-reddit-square','la la-renren','la la-safari','la la-sellsy','la la-shirtsinbulk','la la-simplybuilt','la la-skyatlas','la la-skype','la la-slack','la la-slideshare','la la-soundcloud','la la-spotify','la la-stack-exchange','la la-stack-overflow','la la-steam','la la-steam-square','la la-stumbleupon','la la-stumbleupon-circle','la la-tencent-weibo','la la-trello','la la-tripadvisor','la la-tumblr','la la-tumblr-square','la la-twitch','la la-twitter','la la-twitter-square','la la-viacoin','la la-vimeo','la la-vimeo-square','la la-vine','la la-vk','la la-wechat','la la-weibo','la la-weixin','la la-whatsapp','la la-wikipedia-w','la la-windows','la la-wordpress','la la-xing','la la-xing-square','la la-y-combinator','la la-y-combinator-square','la la-yahoo','la la-yc','la la-yc-square','la la-yelp','la la-youtube','la la-youtube-square','la la-h-square','la la-hospital-o','la la-medkit','la la-stethoscope','la la-user-md'
+    ],
+    social: [
+      'fa fa-facebook',
+      'fa fa-twitter',
+      'fa fa-flickr',
+      'fa fa-pinterest',
+      'fa fa-dribbble',
+      'fa fa-google-plus',
+      'fa fa-youtube-play',
+      'fa fa-instagram',
+      'fa fa-bitbucket',
+      'fa fa-dropbox',
+      'fa fa-reddit',
+      'fa fa-foursquare',
+      'fa fa-github',
+      'fa fa-gittip',
+      'fa fa-linkedin',
+      'fa fa-envelope',
+      'fa fa-renren',
+      'fa fa-trello',
+      'fa fa-tumblr',
+      'fa fa-vk',
+      'fa fa-weibo',
+      'fa fa-xing',
+    ],
+    process: {
+      title: [
+        'Easy demo content',
+        'Multiple options',
+        'Professional support'
+      ],
+
+      title01: [
+        'Idea',
+        'Design',
+        'Code',
+        'Test'
+      ]
+    },
+    post: {
+      title: [
+        'Light & Bright in Brooklyn',
+        'Latest Trends in Scandinavian Design',
+        'Bohemian Loft Living in Portland',
+        'A Baker’s Best Kept Secrets',
+        'Vintage Finds in New Orleans',
+        'Top 5 Cherry Blossom Festivals',
+        'Bucket List: London’s Lush Greenhouses',
+        'Essential Tips for Portrait Photographers',
+        'Must-Have Styles for Summer',
+        'Backpacking the Southern Cascades',
+        'Blogger Spotlight: Kelsey’s Dallas',
+        'Copenhagen’s Hip Bike Culture',
+        'America’s National Parks on a Budget',
+        'Exploring the Columbia River Gorge',
+        'Oregon’s Hidden Coastal Gems',
+        'Summertime beach',
+        'Game in the desert',
+        'Memorable holidays',
+        'Group you travel',
+        'Style you young',
+        'Happy before nature',
+        'Sweet taste, food',
+        'Trip and holidays',
+        'A taste of life',
+        'Brunch With Friends',
+        'My Trip to New York',
+        'Flowers & Decorations',
+        'Fragments of Iceland',
+        'Of Monsters and Men',
+        'Cali Road Trip',
+        'Summer Salad Recipe',
+        'The Lion’s Roar',
+        'Roskilde Festival',
+        'Adventures in Oregon',
+        'My Latest Adventure'
+      ],
+
+      title01: [
+        'Light & Bright in Brooklyn',
+        'Latest Trends in Scandinavian Design',
+        'Bohemian Loft Living in Portland',
+        'A Baker’s Best Kept Secrets',
+        'Vintage Finds in New Orleans',
+        'Top 5 Cherry Blossom Festivals',
+        'Bucket List: London’s Lush Greenhouses',
+        'Essential Tips for Portrait Photographers',
+        'Must-Have Styles for Summer',
+        'Backpacking the Southern Cascades',
+        'Blogger Spotlight: Kelsey’s Dallas',
+        'Copenhagen’s Hip Bike Culture',
+        'America’s National Parks on a Budget',
+        'Exploring the Columbia River Gorge',
+        'Oregon’s Hidden Coastal Gems'
+      ],
+
+      title02: [
+        'Summertime beach',
+        'Game in the desert',
+        'Memorable holidays',
+        'Group you travel',
+        'Style you young',
+        'Happy before nature',
+        'Sweet taste, food',
+        'Trip and holidays',
+        'A taste of life',
+        'Brunch With Friends',
+        'My Trip to New York',
+        'Flowers & Decorations',
+        'Fragments of Iceland',
+        'Of Monsters and Men',
+        'Cali Road Trip',
+        'Summer Salad Recipe',
+        'The Lion’s Roar',
+        'Roskilde Festival',
+        'Adventures in Oregon',
+        'My Latest Adventure'
+      ]
+    },
+    portfolio: {
+      title: [
+        'Cloud Inc',
+        '90s Package',
+        'Desk Concept',
+        'Bergenfield',
+        'Capricho',
+        'Adestra',
+      ],
+
+      categories: [
+        'Photography',
+        'Branding',
+        'Print',
+        'Digital Art',
+        'Web design',
+        'Development',
+        'Furniture',
+        'Logo',
+        'People'
+      ]
+    },
+    listing: {
+      cat: [
+        'Stay',
+        'Eat & Drink',
+        'Shop',
+        'Hotels',
+        'Beauty & Spa',
+        'Real Estate'
+      ],
+      tag: [
+        'Pets Friendly',
+        'Special',
+        'Wireless Internet',
+        'Street Parking',
+        'Accepts Credit card',
+        'Smoking Allowed',
+        'Food & Drink',
+        'Bike Parking'
+      ]
+    },
+    product: {
+      name: [
+        'Lose Oversized Shirt','Two-Tone Cotton-Poplin Shirt','Neutral Washed Silk Blouse','Cotton-Jersey Top','Cutout cashmere, wool and silk-blend sweater','AESOP Mouthwash, 500ml','Large Tortoiseshell Acetate Comb','90 Proof Pomade, 50ml','Four Piece Shaving Set','Grand Soir Eau De Parfum, 70ml','Zebrano Wood Shave Set','Horn And Super Badger Bristle Shaving Brush','Vintage Straight Razor','Motion Shell Hooded Jacket','MISSONI Space-Dyed Cotton Zip-Up Hoodie','James Perse Slim-Fit Printed Cotton-Jersey T-Shirt','Slim-Fit Cotton Oxford Shirt','RRL Mélange Cotton Sweater','Day Hiker Canvas Backpack','Slim-Fit Washed-Denim Jeans','J.CREW Cotton Club Shorts','Brown Leather Shoes','Round Eyeglass Frames','Yellow Straight Razor','Classic Black Telephone','Chic Dutch Single Speed Bicycle','Neutral Washed Silk Blouse','Cotton-Jersey Top','Cotton-Jersey and Tiered Pleated Poplin T-shirt','Oversized Cotton-Blend Shell Bomber Jacket','Button Embellished Printed Cotton Jersey','Stretch-Silk Casual Mini Dress','B/W Cotton-Poplin Shirt','Love Leather Skirt','LA One Size Fits All Shirt','Painter Petite Top','Black And White Varsity Jacket','Biker Leather Jacket With Multi Quilted Details','Skater Girl Style Leather Jacket'
+      ],
+
+      categories: [
+        'Bags',
+        'Shoes',
+        'Clothing',
+        'Men',
+        'Women'
+      ],
+
+      label: [
+        'sale',
+        'new',
+        'hot'
+      ]
+    },
+    calendar: {
+      date: [
+        'Oct 1, 2012',
+        'Oct 2, 2013',
+        'Oct 3, 2014',
+        'Oct 4, 2015',
+        'Oct 5, 2016',
+        'Oct 6, 2017',
+        'Oct 7, 2011',
+        'Oct 8, 2010',
+        'Oct 9, 2009',
+        'Oct 10, 2008',
+        'Oct 11, 2007',
+        'Oct 12, 2006',
+        'Nov 2, 2005',
+        'Nov 3, 2006',
+        'Nov 4, 2007',
+        'Nov 5, 2008',
+        'Nov 6, 2009',
+        'Nov 7, 2010',
+        'Nov 8, 2011',
+        'Nov 9, 2012',
+      ]
+    }
+  }
+	
+

@@ -1,0 +1,8 @@
+.search {
+	color: $color-primary !important;
+	font-size: 20px;
+	margin-left: auto;
+	@include media('<=md') {
+		padding-right: 24px;
+	}
+}

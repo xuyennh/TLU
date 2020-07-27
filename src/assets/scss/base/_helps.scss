@@ -1,0 +1,73 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba($color: #000000, $alpha: 0.3);
+	z-index: 9;
+	display: none;
+}
+
+// .overlay-active {
+// 	@include media('>xs','<=812px') {
+// 		display: block;
+// 	}
+// }
+.divider {
+	width: 100%;
+	height: 1px;
+	background-color: #1e2652;
+}
+
+.divider-light {
+	width: 100%;
+	height: 1px;
+	background-color: #ffffff;
+}
+.angle-right {
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #ffffff;
+	border-left: 2px solid #ffffff;
+	transform: rotate(135deg);
+}
+.angle-bottom {
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid $color-light-2;
+	border-left: 2px solid $color-light-2;
+	transform: rotate(-135deg);
+}
+.text-capitalize {
+	text-transform: capitalize;
+}
+.plus {
+	display: inline-block;
+	width: 39px;
+	height: 39px;
+	vertical-align: middle;
+	@include media('<sm') {
+		width: 25px;
+		height: 25px;
+	}
+}
+
+.alt {
+	background: linear-gradient($color-primary, $color-primary), linear-gradient($color-primary, $color-primary);
+	background-position: center;
+	background-size: 100% 2px, 2px 100%; /*thickness = 2px, length = 50% (25px)*/
+	background-repeat: no-repeat;
+}
+.arrow-bottom {
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid $color-light-2;
+	border-left: 2px solid $color-light-2;
+	transform: rotate(-135deg);
+}
+.dl-none {
+	@include media('<sm') {
+		display: none;
+	}
+}

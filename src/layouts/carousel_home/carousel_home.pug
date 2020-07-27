@@ -1,0 +1,28 @@
+mixin carousel-home 
+  #carouselExampleCaptions.carousel.slide(data-ride='carousel')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100(src='./assets/images/banners.png', alt='...')
+        .carousel-caption
+          h1 Tư duy là sức mạnh của sáng tạo
+      .carousel-item
+        img.d-block.w-100(src='./assets/images/banners.png', alt='...')
+        .carousel-caption
+         h1 Tư duy là sức mạnh của sáng tạo 
+      .carousel-item
+        img.d-block.w-100(src='./assets/images/banners.png', alt='...')
+        .carousel-caption
+          h1 Tư duy là sức mạnh của sáng tạo 
+      .carousel-item
+        img.d-block.w-100(src='./assets/images/banners.png', alt='...')
+        .carousel-caption
+          h1 Tư duy là sức mạnh của sáng tạo 
+    ol.carousel-indicators
+      div.indicators
+        li.active(data-target='#carouselExampleCaptions', data-slide-to='0')
+        li(data-target='#carouselExampleCaptions', data-slide-to='1')
+        li(data-target='#carouselExampleCaptions', data-slide-to='2')
+        li(data-target='#carouselExampleCaptions', data-slide-to='3')
+      a(href="").arrow
+        i.fa.fa-long-arrow-down(aria-hidden='true')
+

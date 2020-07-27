@@ -1,0 +1,22 @@
+include ../../components/logo/logo
+include ../../components/navigation/navigation
+include ../../components/category/category
+include ../../components/search/search
+include ../../components/burger/burger
+include ../../components/navigation_mobile/navigation_mobile
+mixin header
+  .container
+    div.header
+      +logo
+      div.header_right
+        div.nav-pc
+          +category
+          +navigation
+      div.nav-mobile-icon
+        +search
+        +burger
+  +navigation-mobile
+                
+          
+
+      

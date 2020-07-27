@@ -1,0 +1,37 @@
+.navigation {
+	display: flex;
+	@include media('<=md') {
+		display: none;
+	}
+}
+
+.navigation__list {
+	padding: 100;
+	margin: 0;
+}
+
+.navigation__item {
+	list-style: none;
+	display: inline-block;
+	padding-right: 30px;
+	@include media('<=1400px') {
+		padding-right: 15px;
+	}
+	@include media('<=1024px') {
+		padding-right: 10px;
+	}
+	@include media('<=md') {
+		padding-right: 1px;
+	}
+}
+
+.navigation__link {
+	color: $color-secondary-light;
+	font-weight: $font-bold;
+	font-size: 15px;
+}
+
+.navigation__item:hover {
+	color: $color-primary;
+	cursor: pointer;
+}

@@ -1,0 +1,18 @@
+mixin component(tag = "div", className = null, props = {}, componentComment = true)
+  -
+    const defaultProps = {
+      className: null,
+      attr: {},
+      id: null,
+      css: {}
+    }
+    const _props = Object.assign({}, defaultProps, props);
+  if (componentComment)
+    |
+    | <!-- #{className} -->
+  #{tag}(id=_props.id, class=className, class=_props.className, style=_props.css)&attributes(_props.attr)&attributes(attributes)
+    if (block)
+      block
+  if (componentComment)
+    | <!-- End / #{className} -->
+    |

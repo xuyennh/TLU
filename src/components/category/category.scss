@@ -1,0 +1,33 @@
+.category {
+	padding-top: 4px;
+	padding-bottom: 50px;
+	@include media('<=md') {
+		display: none;
+	}
+}
+
+.category__list {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.category__item {
+	list-style: none;
+	padding-right: 30px;
+	display: inline-block;
+	@include media('<=1024px') {
+		padding-right: 20px;
+	}
+	@include media('<=md') {
+		padding-right: 10px;
+	}
+}
+
+.category__link {
+	color: $color-dark;
+	font-weight: $font-Demibold;
+	cursor: pointer;
+	font-size: 14px;
+}

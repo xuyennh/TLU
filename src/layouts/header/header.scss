@@ -1,0 +1,20 @@
+.header {
+	width: 100%;
+	display: flex;
+	padding-top: 16px;
+	padding-bottom: 20px;
+	justify-content: space-between;
+	align-items: center;
+	@include media('<=xxs') {
+		padding-top: 10px;
+	}
+}
+
+.nav-mobile-icon {
+	display: flex;
+	padding-top: 25px;
+	align-items: center;
+	@include media('>md') {
+		display: none;
+	}
+}

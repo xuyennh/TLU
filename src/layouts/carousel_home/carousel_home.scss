@@ -1,0 +1,75 @@
+.carousel-indicators {
+	justify-content: space-between;
+	margin: 0;
+	padding: 0 120px;
+	padding-bottom: 75px;
+	@include media('<=1024px') {
+		padding: 0 60px;
+		padding-bottom: 35px;
+	}
+	@include media('<=md') {
+		padding: 0 35px;
+		padding-bottom: 35px;
+	}
+	@include media('<=xs') {
+		padding: 0 15px;
+		padding-bottom: 15px;
+	}
+}
+.carousel-indicators li {
+	@include media('<=xs') {
+		width: 15px;
+	}
+}
+.carousel-item {
+	max-height: 100vh;
+	background: no-repeat center center;
+	background-size: cover;
+}
+.carousel-caption {
+	padding: 0 120px;
+	padding-bottom: 178px;
+	text-align: left;
+	left: 0;
+	width: 50%;
+	@include media('<=1024px') {
+		padding: 0 60px;
+		padding-bottom: 120px;
+	}
+	@include media('<=md') {
+		padding: 0 35px;
+		padding-bottom: 70px;
+	}
+	@include media('>=375px','<415px') {
+		padding: 0 15px;
+		padding-bottom: 25px;
+	}
+	@include media('<=xxs') {
+		padding: 0 15px;
+		padding-bottom: 20px;
+	}
+}
+.carousel-caption h1 {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	font-weight: 500;
+	max-height: 250px;
+	@include pfs('font-size', (
+		1200px: 40px,
+		400px: 20px
+	));
+}
+.indicators {
+	display: flex;
+	align-items: flex-end;
+}
+.arrow i {
+	color: $color-white;
+	font-size: 50px;
+	padding-bottom: 30px;
+	@include media('<1024px') {
+		display: none;
+	}
+}

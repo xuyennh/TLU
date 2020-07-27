@@ -1,0 +1,47 @@
+include ../settings.pug
+
+-
+  const {
+    sectionClassDefault,
+    containerClassDefault,
+    rowClass,
+    colArrangement,
+    overlay
+  } = bootstrapSettings;
+  const isDev = process.env.NODE_ENV === 'dev';
+
+  const get = (arr, type) => {
+    if (arr.length > 0) {
+      return colArrangement.map((item, index) => {
+        return arr[index] && `col-${item}-${type === "column" ? "" : "offset-"}${arr[index]}`
+      })
+    }
+  }
+
+mixin container(props = {})
+  div(class=containerClassDefault)
+    if (block)
+      block
+
+mixin row(props = {})
+  |
+  | <!-- Section -->
+  section(class=sectionClassDefault)
+    div(class=containerClassDefault)
+      div(class=rowClass)&attributes(attributes)
+        if (block)
+          block
+  |
+  | <!-- End / Section -->
+  |
+
+mixin col(props = {})
+  -
+    const defaultProps = {
+      cols: [12],
+      offsets: []
+    };
+    const _props = Object.assign({}, defaultProps, props);
+  +component("div", null, props, false)(class=get(_props.cols, "column"), class=get(_props.offsets, "offsets"))
+    if (block)
+      block

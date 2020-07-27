@@ -1,0 +1,14 @@
+-
+  function random(min, max = null) {
+    var results = '';
+    if (Array.isArray(min)) {
+      if (max === null) {
+        results = min[Math.floor(Math.random()*min.length)];
+      } else {
+        results = min[Math.floor(Math.random()*min.length)].slice(0, max);
+      }
+    } else {
+      results = Math.floor(Math.random() * (max - min)) + min;
+    }
+    return results;
+  }

@@ -1,0 +1,109 @@
+.program-study__top {
+	padding: 50px 0;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid #e1e1e1;
+	@include media('<sm') {
+		padding: 25px 0;
+	}
+}
+.program-study__top-left {
+	@include media('<sm') {
+		display: none;
+	}
+}
+.program-study__top-left a {
+	color: $color-secondary-light;
+	font-weight: $font-Demibold;
+	font-size: 20px;
+}
+.program-study__top-right {
+	color: $color-primary;
+	@include media('<sm') {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+.program-study__top-right span:after {
+	content: ':';
+	padding-right: 28px;
+	color: $color-primary;
+}
+.program-study__content {
+	padding-top: 111px;
+	padding-bottom: 140px;
+	@include media('<sm') {
+		padding-top: 50px;
+		padding-bottom: 80px;
+	}
+}
+.program-study__list {
+	margin: 0;
+}
+.program-study__list li {
+	list-style: none;
+	padding: 17px 0;
+	border-top: 1px solid #e1e1e1;
+}
+.program-study__list li:last-child {
+	border-bottom: 1px solid #e1e1e1;
+}
+.program-study__list a {
+	color: $color-secondary-light;
+}
+.program-study__title {
+	font-size: 42px;
+	font-weight: $font-bold;
+	color: $color-secondary-light;
+	@include media('<sm') {
+		padding: 25px 0;
+		font-size: 30px;
+	}
+}
+.program-study__all {
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+	padding-bottom: 105px;
+	@include media('<sm') {
+		padding-bottom: 75px;
+	}
+}
+.program-study__all a {
+	color: $color-primary;
+	display: flex;
+	align-items: center;
+}
+.program-study__all a::after {
+	content: '';
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid $color-primary;
+	border-left: 2px solid $color-primary;
+	transform: rotate(-135deg);
+	margin-left: 20px;
+}
+.program-study__video {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%;
+}
+.responsive-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+.program-study__desc {
+	font-size: 20px;
+	color: $color-secondary-light;
+	padding-top: 30px;
+	text-align: center;
+	font-weight: $font-medium;
+}

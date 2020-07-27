@@ -1,0 +1,63 @@
+
+//- Print menu
+mixin print_menu(url, text, icon, submenu, opts)
+  a(href=url ? url : '#')
+    if (icon)
+      i(class=icon)
+      | #{text}
+    else
+      | #{text}
+  if (submenu)
+    - let submenuClass = opts.submenu.class ? opts.submenu.class : 'sub-menu';
+    +menu_unordered(submenu, submenuClass, opts)
+
+//- List
+mixin menu_list(url, text, icon, submenu, opts)
+  -
+    let parentClass = opts.submenu.parentClass ? opts.submenu.parentClass : 'menu-item-has-children',
+      currentParentClass = opts.currentParentClass ? opts.currentParentClass : 'current-menu-parent',
+      currentClass = opts.currentClass ? opts.currentClass : 'current-menu-item';
+
+    if (submenu && config.title === text) {
+      liClass = parentClass + ' ' + currentParentClass
+    } else if (config.title === text) {
+      liClass = currentClass
+    } else if (submenu) {
+      liClass = parentClass
+    } else {
+      liClass = null
+    }
+
+  li(class=liClass)
+    +print_menu(url, text, icon, submenu, opts)
+
+//- Unordered
+mixin menu_unordered(data, addClass, opts)
+  ul(class=addClass)
+    each val, index in data
+      +menu_list(val.url, val.text, val.icon, val.submenu, opts)
+      if index >= data.length
+        - break
+
+//- Create menu
+mixin menu(classNav, opts)
+  -
+    let _classNav = classNav;
+    if (classNav.indexOf('.') > -1) {
+      _classNav = classNav.split('.')[1];
+    }
+    let menuClass = opts.menuClass ? opts.menuClass : 'wil-menu-list';
+  |
+  | <!-- #{_classNav} -->
+  nav(class=_classNav)&attributes(opts.attr)&attributes(attributes)
+    |
+    | <!-- #{opts.menuClass} -->
+    +menu_unordered(opts.data, menuClass, opts)
+    | <!-- #{opts.menuClass} -->
+    |
+    if block
+      block
+  | <!-- End / #{_classNav} -->
+  |
+
+
