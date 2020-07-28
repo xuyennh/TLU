@@ -2,7 +2,7 @@
 	padding: 50px 0;
 	display: flex;
 	justify-content: space-between;
-	border-bottom: 2px solid #e1e1e1;
+	border-bottom: 2px solid $color-hr;
 	@include media('<sm') {
 		padding: 25px 0;
 	}
@@ -33,10 +33,10 @@
 }
 .program-study__content {
 	padding-top: 111px;
-	padding-bottom: 140px;
+	// padding-bottom: 140px;
 	@include media('<sm') {
 		padding-top: 50px;
-		padding-bottom: 80px;
+		// padding-bottom: 80px;
 	}
 }
 .program-study__list {
@@ -45,10 +45,10 @@
 .program-study__list li {
 	list-style: none;
 	padding: 17px 0;
-	border-top: 1px solid #e1e1e1;
+	border-top: 1px solid $color-hr;
 }
 .program-study__list li:last-child {
-	border-bottom: 1px solid #e1e1e1;
+	border-bottom: 1px solid $color-hr;
 }
 .program-study__list a {
 	color: $color-secondary-light;
@@ -57,7 +57,7 @@
 	font-size: 42px;
 	font-weight: $font-bold;
 	color: $color-secondary-light;
-	@include media('<sm') {
+	@include media('<md') {
 		padding: 25px 0;
 		font-size: 30px;
 	}

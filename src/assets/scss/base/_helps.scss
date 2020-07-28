@@ -71,3 +71,9 @@
 		display: none;
 	}
 }
+.dl-block {
+	visibility: hidden;
+	@include media('<sm') {
+		visibility: visible;
+	}
+}
