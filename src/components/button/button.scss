@@ -3,6 +3,14 @@
 	padding: 20px 40px;
 	font-size: 18px;
 	font-weight: $font-Demibold;
+	@include media('<1400px') {
+		padding: 15px 30px;
+		font-size: 12px;
+	}
+	@include media('<md') {
+		padding: 10px 25px;
+		font-size: 12px;
+	}
 }
 
 .button--light {

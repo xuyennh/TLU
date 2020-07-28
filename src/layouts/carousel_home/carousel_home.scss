@@ -56,10 +56,16 @@
 	-webkit-box-orient: vertical;
 	font-weight: 500;
 	max-height: 250px;
-	@include pfs('font-size', (
-		1200px: 40px,
-		400px: 20px
-	));
+	font-size: 100px;
+	@include media('<1400px') {
+		font-size: 50px;
+	}
+	@include media('<=sm') {
+		font-size: 30px;
+	}
+	@include media('<=xs') {
+		font-size: 20px;
+	}
 }
 .indicators {
 	display: flex;
