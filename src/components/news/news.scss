@@ -1,10 +1,25 @@
 .new__hot {
 	background-repeat: no-repeat;
-	min-height: 560px;
+	// min-height: 560px;
 }
 .new__hot-inner {
 	width: 50%;
 	padding: 80px 0;
 	padding-left: 90px;
 	color: $color-white;
+}
+.new__hot-title {
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: $font-Demibold;
+	padding-bottom: 15px;
+}
+.new__hot-desc {
+	font-size: 35px;
+	font-weight: $font-bold;
+	margin-bottom: 93px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
 }
