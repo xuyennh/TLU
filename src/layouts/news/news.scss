@@ -19,7 +19,6 @@
 	color: $color-white;
 	@include media('>md','<1400px') {
 		width: 60%;
-		padding-left: 50px;
 	}
 	@include media('<md') {
 		padding: 0;
@@ -177,40 +176,4 @@
 		visibility: visible;
 		display: flex;
 	}
-}
-.news__Admissions {
-	background-color: $color-secondary;
-	position: relative;
-}
-.news__Admissions-item {
-	padding: 70px;
-	@include media('<1400px') {
-		padding: 50px;
-	}
-}
-.news__Admissions-title {
-	font-size: 46px;
-	color: $color-white;
-	font-weight: $font-Demibold;
-	padding-bottom: 20px;
-	@include media('<1400px') {
-		font-size: 30px;
-	}
-}
-.news__Admissions-desc {
-	font-size: 14px;
-	font-weight: $font-medium;
-	padding-bottom: 34px;
-	color: $color-secondary-dark;
-}
-.news__Admissions-images {
-	position: absolute;
-	bottom: 0;
-	@include media('<sm') {
-		visibility: hidden;
-	}
-}
-.news__Admissions-images img {
-	display: block;
-	max-width: 100%;
 }
