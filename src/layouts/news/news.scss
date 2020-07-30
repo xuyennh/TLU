@@ -57,10 +57,10 @@
 }
 .news_header-left {
 	background-color: $color-secondary;
-	width: 66.6667%;
-	// padding: 50px 0;
-	// padding-left: 90px;
-	// padding-right: 40px;
+	flex: 0 0 66.666667%;
+	padding: 50px 0;
+	padding-left: 90px;
+	padding-right: 40px;
 	display: flex;
 	@include media('<1400px') {
 		padding: 40px;
@@ -108,9 +108,9 @@
 }
 
 .news_header-right {
-	width: 33.3333%;
+	flex: 0 0 33.333333%;
 	background-color: $color-primary;
-	// padding: 50px;
+	padding: 50px;
 	@include media('<1400px') {
 		padding: 40px;
 	}
@@ -185,6 +185,9 @@
 	padding: 70px;
 	@include media('<1400px') {
 		padding: 50px;
+	}
+	@include media('<sm') {
+		padding: 35px;
 	}
 }
 .news__Admissions-title {
