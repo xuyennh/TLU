@@ -21,7 +21,7 @@
 		width: 60%;
 	}
 	@include media('<md') {
-		padding: 0;
+		padding: 0 30px;
 	}
 }
 .news__hot-title {
@@ -58,6 +58,7 @@
 .news_header-left {
 	background-color: $color-secondary;
 	flex: 0 0 66.666667%;
+	max-width: 66.666667%;
 	padding: 50px 0;
 	padding-left: 90px;
 	padding-right: 40px;
@@ -66,11 +67,14 @@
 		padding: 40px;
 	}
 	@include media('<=md') {
-		width: 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
 	}
 	@include media('<sm') {
+		padding: 30px;
 		margin: 25px 0;
-		width: 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
 	}
 }
 .news__image {
@@ -109,16 +113,20 @@
 
 .news_header-right {
 	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
 	background-color: $color-primary;
 	padding: 50px;
 	@include media('<1400px') {
 		padding: 40px;
 	}
 	@include media('<=md') {
-		width: 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
 	}
 	@include media('<sm') {
-		width: 100%;
+		padding: 30px;
+		flex: 0 0 100%;
+		max-width: 100%;
 	}
 }
 .news__center .bd-hr:not(:last-child) {
@@ -187,7 +195,7 @@
 		padding: 50px;
 	}
 	@include media('<sm') {
-		padding: 35px;
+		padding: 30px;
 	}
 }
 .news__Admissions-title {
