@@ -54,7 +54,7 @@
 				classBackButton: 'nav-back-button',
 				backButton: '<a href="#">Quay lại</a>',
 				nameLink: '<a href="#">{{nameLink}}</a>',
-				classlink: 'nav-link',
+				classlink: 'sub-menu__name',
 				classActive: 'active',
 				easing: 'ease',
 				arrow: '<span class="nav-arrow"></span>'
@@ -94,7 +94,7 @@
 			const { opts } = this;
 			const innerHtml = el.innerHTML;
 			el.innerHTML = `
-            <div class="nav-wrapper-inner" style="overflow: hidden; position: relative">
+            <div class="nav-wrapper-inner">
                 ${innerHtml}
             </div>
           `;
@@ -119,7 +119,7 @@
 				});
 				menu.parentNode.wilStyles({
 					width: `${opts.menuWidth * (level + 1)}px`,
-					height: '100vh'
+					height: 'auto'
 				});
 				setTimeout(() => (menu.parentNode.style.height = height), opts.duration);
 			});
@@ -205,7 +205,7 @@
 		arrow: '<span class="nav-arrow"></span>',
 		backButton: '<a href="#">Quay lại</a>',
 		nameLink: '<a href="#">{{nameLink}}</a>',
-		classlink: 'nav-link',
+		classlink: 'sub-menu__name',
 		classBackButton: 'nav-back-button'
 	});
 
@@ -220,7 +220,8 @@
 		itemSubmenuEls.forEach((itemSubmenuEl) => {
 			itemSubmenuEl.addEventListener('click', (event) => {
 				event.preventDefault();
-				console.log(event.currentTarget);
+				const submenu = event.currentTarget.nextElementSibling;
+				submenu && submenu.classList.toggle('sub-menu-actives');
 			});
 		});
 	};

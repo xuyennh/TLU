@@ -1,4 +1,5 @@
 .carousel-indicators {
+	display: flex;
 	justify-content: space-between;
 	margin: 0;
 	padding: 0 120px;
@@ -71,11 +72,10 @@
 	display: flex;
 	align-items: flex-end;
 }
-.arrow i {
-	color: $color-white;
-	font-size: 50px;
+.arrow {
 	padding-bottom: 30px;
-	@include media('<1024px') {
+	text-align: right;
+	@include media('<1200px') {
 		display: none;
 	}
 }

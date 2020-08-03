@@ -2,9 +2,9 @@
 	position: relative;
 }
 .nav-mobile {
-	position: absolute;
-	top: 0;
-	left: 0;
+	position: fixed;
+	top: 93px;
+	bottom: 0;
 	background-color: #000a3d;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -13,8 +13,7 @@
 	z-index: 99999;
 }
 .nav-menu {
-	position: absolute;
-	left: 0;
+	// position: absolute;
 	list-style: none;
 	margin: 0;
 	padding: 30px;
@@ -92,21 +91,4 @@
 }
 .nav-actives {
 	transform: translateX(0%);
-}
-.nav-link {
-	padding: 0;
-	display: flex;
-	padding-top: 15px;
-	flex-direction: column;
-}
-.nav-link:after {
-	content: '';
-	width: 100%;
-	height: 1px;
-	background-color: $color-white;
-	margin: 9px 0;
-}
-.nav-link a {
-	color: $color-white;
-	font-size: 14px;
 }

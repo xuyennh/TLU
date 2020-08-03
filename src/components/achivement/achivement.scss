@@ -9,8 +9,8 @@
 	}
 }
 .achievement__percent {
-	font-size: 140px;
-	@include media('<1400px') {
+	font-size: 100px;
+	@include media('<1500px') {
 		font-size: 70px;
 	}
 	@include media('<=sm') {
