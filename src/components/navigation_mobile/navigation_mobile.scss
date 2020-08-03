@@ -3,7 +3,7 @@
 }
 .nav-mobile {
 	position: fixed;
-	top: 93px;
+	top: 115px;
 	bottom: 0;
 	background-color: #000a3d;
 	overflow-x: hidden;
@@ -11,6 +11,12 @@
 	transform: translateX(-100%);
 	transition: all 0.2s ease-in;
 	z-index: 99999;
+	@include media('<sm') {
+		top: 93px;
+	}
+	@include media('<=xxs') {
+		top: 87px;
+	}
 }
 .nav-menu {
 	// position: absolute;

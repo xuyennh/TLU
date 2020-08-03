@@ -1,10 +1,11 @@
 .header {
-	width: 100%;
 	display: flex;
 	padding-top: 16px;
 	padding-bottom: 20px;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
+	background-color: $color-white;
 	@include media('<=xxs') {
 		padding-top: 10px;
 	}
