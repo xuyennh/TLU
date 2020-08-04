@@ -1,0 +1,23 @@
+mixin breadcrumb(props = {})
+  div.breadcrumb
+    .container
+      nav.breadcrumb__content
+        ul.breadcrumb__left
+          li.breadcrumb__item
+            a(href="")= props.item1
+          li.breadcrumb__item
+            a(href="")= props.item2
+          li.breadcrumb__item
+            a(href="")= props.item3
+        ul.breadcrumb__right
+          li.breadcrumb__icon.breadcrumb__text
+            a(href="") Chia sẻ
+          li.breadcrumb__icon
+            a(href="")
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+          li.breadcrumb__icon
+            a(href="")
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+          li.breadcrumb__icon
+            a(href="")
+              <i class="fa fa-instagram" aria-hidden="true"></i>

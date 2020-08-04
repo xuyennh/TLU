@@ -171,7 +171,6 @@
 				this.menuTranslate(menus, this.level, `${subMenuHeight}px`);
 				event.currentTarget.parentNode.wilAddClass(opts.classActive);
 				subMenu.style.visibility = 'visible';
-
 				let { nameLink } = opts;
 				if (nameLink.indexOf('{{nameLink}}') !== -1) {
 					nameLink = nameLink.replace(/{{nameLink}}/g, event.currentTarget.innerText);
