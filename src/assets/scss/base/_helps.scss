@@ -80,3 +80,24 @@
 	background-color: #000;
 	opacity: 0.4;
 }
+.reserve-column {
+	@include media('<md') {
+		flex-direction: column-reverse;
+	}
+}
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.mg-left-auto {
+	margin-left: auto;
+}
+.max-width {
+	max-width: 50%;
+}
+.image-center {
+	@include media('<md') {
+		text-align: center;
+	}
+}

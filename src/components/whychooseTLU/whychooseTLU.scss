@@ -1,0 +1,51 @@
+.whychoosetlu {
+	@include media('<md') {
+		padding-right: 0;
+		padding-top: 40px;
+		text-align: center !important;
+	}
+}
+.whychoosetlu__text {
+	font-size: 13px;
+	font-weight: $font-Demibold;
+	color: $color-dark-5;
+	padding-bottom: 23px;
+	@include media('<lg') {
+		font-size: 12px;
+		padding-bottom: 14px;
+	}
+}
+.whychoosetlu__title {
+	font-size: 42px;
+	font-weight: $font-bold;
+	color: $color-dark-2;
+	@include media('<lg') {
+		font-size: 30px;
+	}
+}
+.whychoosetlu__desc {
+	font-size: 16px;
+	font-weight: $font-medium;
+	color: #787878;
+}
+.whychoosetlu__link {
+	color: $color-primary;
+	font-size: 15px;
+	font-weight: $font-bold;
+	padding-top: 25px;
+	display: block;
+	@include media('<lg') {
+		padding-top: 15px;
+	}
+}
+
+.whychoosetlu__link::after {
+	content: '';
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid $color-primary;
+	border-left: 2px solid $color-primary;
+	transform: rotate(135deg);
+	display: inline-block;
+	margin-left: 10px;
+}

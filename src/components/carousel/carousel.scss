@@ -1,0 +1,55 @@
+.carousel-inner {
+	background-color: $color-light-2;
+}
+.carousel-indicator-bottom {
+	position: static;
+	padding: 0 !important;
+	margin: 0 !important;
+	padding-top: 30px !important;
+}
+.indicators li {
+	background-color: #bfbfbf;
+}
+.carousel-content {
+	position: absolute;
+	background-color: red;
+	color: $color-white;
+	bottom: 0;
+	right: 0;
+	padding: 40px;
+	@include media('<sm') {
+		padding: 17px;
+		margin-left: 30px;
+	}
+}
+.carousel__title {
+	font-size: 13px;
+	font-weight: $font-bold;
+	color: #ffacac;
+	text-transform: uppercase;
+	@include media('<sm') {
+		font-size: 11px;
+	}
+}
+.carousel__detail {
+	font-size: 25px;
+	padding-bottom: 55px;
+	@include media('<sm') {
+		font-size: 18px;
+		padding-bottom: 12px;
+	}
+}
+.carousel__name {
+	font-size: 18px;
+	font-weight: $font-bold;
+	@include media('<sm') {
+		font-size: 12px;
+	}
+}
+.carousel__carrer {
+	font-weight: $font-medium;
+	font-size: 16px;
+	@include media('<sm') {
+		font-size: 12px;
+	}
+}
