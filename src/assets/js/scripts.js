@@ -215,12 +215,24 @@
 			nav.classList.toggle('nav-actives');
 			burger.classList.toggle('toggle');
 		});
+		//submenu
 		const itemSubmenuEls = [ ...document.querySelectorAll('.sub-menu__link') ];
 		itemSubmenuEls.forEach((itemSubmenuEl) => {
 			itemSubmenuEl.addEventListener('click', (event) => {
 				event.preventDefault();
 				const submenu = event.currentTarget.nextElementSibling;
 				submenu && submenu.classList.toggle('sub-menu-actives');
+			});
+		});
+		//tuyensinh
+		const futureCarrerItemEls = [ ...document.querySelectorAll('.future-carrer__link') ];
+		futureCarrerItemEls.forEach((futureCarrerItemEl) => {
+			futureCarrerItemEl.addEventListener('click', (event) => {
+				event.preventDefault();
+				const futureCarrerDetails = event.currentTarget.nextElementSibling;
+				const plusActive = event.currentTarget;
+				futureCarrerDetails && futureCarrerDetails.classList.toggle('future-carrer__detail-active');
+				plusActive && plusActive.classList.toggle('plus-active');
 			});
 		});
 	};

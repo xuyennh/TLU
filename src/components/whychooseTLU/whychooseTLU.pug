@@ -1,7 +1,7 @@
-mixin whychooseTLU(props = {})
-  div
-    .whychoosetlu Tạo sao lựa chọn TLU?
-    .whychoosetlu__title Hệ thống kiến trúc thay đổi tư duy
-    .whuchoosetlu__desc Kiến trúc trong xây dựng không phải là một khái niệm mới lạ. Tuy nhiên, kiến trúc trong giáo dục lại là một khái niệm mới mẻ với nhiều người. Chúng tôi đã thiết kế riêng cho ngôi trường một kiến trúc độc đáo, sáng tạo, sinh viên có thể học tập mọi lúc mọi nơi. Với hệ thống cơ sở vật luôn được cập nhật, người học được phát triển toàn diện từ kiến thức chuyên môn tới kĩ năng thực hành mang tính ứng dụng, phục vụ mọi nhu cầu của công việc thời đại mới. Tại đây, chúng tôi gọi đó là “Kiến trúc thay đổi tư duy”
-    .whuchoosetlu__link  khám phá cơ sở vật chất
+mixin why-choose-tlu(props = {})
+  div.whychoosetlu(style=`text-align:${props.align}`)
+    .whychoosetlu__text Tạo sao lựa chọn TLU?
+    .whychoosetlu__title= props.title
+    .whychoosetlu__desc= props.desc
+    a(href="").whychoosetlu__link= props.link
 

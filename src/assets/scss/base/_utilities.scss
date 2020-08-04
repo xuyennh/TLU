@@ -13,3 +13,20 @@
 .ml-10 {
 	margin-left: 10px;
 }
+.pt-35 {
+	padding-top: 35px;
+}
+.pt-104 {
+	padding-top: 104px;
+}
+.pt-sm-70 {
+	@include media('<md') {
+		padding-top: 70px !important;
+	}
+}
+.pt-180 {
+	padding-top: 180px;
+}
+.pt-214 {
+	padding-top: 214px;
+}

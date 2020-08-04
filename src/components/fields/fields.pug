@@ -1,0 +1,7 @@
+mixin field-post(props = {})
+  .field__post
+    .field__image
+      img(src=props.img, alt="")
+    .field__name= props.name
+    .field__text= props.text
+    a(href="").field__link= props.link
