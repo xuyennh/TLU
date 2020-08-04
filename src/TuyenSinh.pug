@@ -1,9 +1,30 @@
 extends _core/layout
 
 include layouts/header/header
+include ./components/banner/banner
+include ./components/breadcrumb/breadcrumb
+include ./components/whychooseTLU/whychooseTLU
 
 block header
   +header
-
+  +banner({
+    image: 'https://images.pexels.com/photos/4755027/pexels-photo-4755027.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    img1: './assets/images/tamgiac.png',
+    title: 'Tuyển sinh đại học'
+  })
+block content
+  +breadcrumb({
+    item1: 'Trang Chủ',
+    item2: 'Tuyển sinh',
+    item3: 'Tuyển sinh đại học chính quy'
+  })
+  .container
+    .section-page
+      .main
+        .row
+          .col-lg-6
+            +whychooseTLU({})
+          .col-lg-6
+            img(src="./assets/images/item1.png", alt="")
 
 
