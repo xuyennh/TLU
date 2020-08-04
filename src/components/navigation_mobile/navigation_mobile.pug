@@ -1,42 +1,41 @@
 include ../language/language_mobile
 include ../submenu/submenu
 
-mixin navigation-mobile 
-  .sidebar
-    nav.nav-mobile
-      ul.nav-menu
-        li.nav-menu__item
-          a(href="").nav-menu__link CHƯƠNG TRÌNH ĐÀO TẠO
-          +submenu
-        li.nav-menu__item
-          a(href="").nav-menu__link TUYỂN SINH
-          +submenu
-        li.nav-menu__item
-          a(href="").nav-menu__link ĐỜI SỐNG THĂNG LONG
-          +submenu
-        li.nav-menu__item
-          a(href="").nav-menu__link GIỚI THIỆU
-          +submenu
-        li.nav-menu__item
-          a(href="").nav-menu__link tin tức - sự kiện
-          +submenu
-        li.nav-menu__item
-          a(href="").nav-menu__link DOANH NGHIỆP
-          +submenu
-        li.nav-menu__item
-          ul.category-menu
-            li.category-menu__item
-              a(href="").category-menu__link Thông tin - tài liệu
-            li.category-menu__item
-              a(href="").category-menu__link Tra cứu điểm thi
-            li.category-menu__item
-              a(href="").category-menu__link Liên hệ
-            li.category-menu__item
-              a(href="").category-menu__link Tuyển dụng
-        li.nav-menu__item
-          a(href="").nav-menu__link.text-capitalize Chương Trình sau đại học
-          +submenu
-        li.nav-menu__item
-          a(href="").nav-menu__link.text-capitalize Chương Trình sau đại học
-          +submenu
-          +language-mobile
+mixin navigation-mobile
+  nav.nav-mobile
+    ul.nav-menu
+      li.nav-menu__item
+        a(href="").nav-menu__link CHƯƠNG TRÌNH ĐÀO TẠO
+        +submenu
+      li.nav-menu__item
+        a(href="").nav-menu__link TUYỂN SINH
+        +submenu
+      li.nav-menu__item
+        a(href="").nav-menu__link ĐỜI SỐNG THĂNG LONG
+        +submenu
+      li.nav-menu__item
+        a(href="").nav-menu__link GIỚI THIỆU
+        +submenu
+      li.nav-menu__item
+        a(href="").nav-menu__link tin tức - sự kiện
+        +submenu
+      li.nav-menu__item
+        a(href="").nav-menu__link DOANH NGHIỆP
+        +submenu
+      li.nav-menu__item
+        ul.category-menu
+          li.category-menu__item
+            a(href="").category-menu__link Thông tin - tài liệu
+          li.category-menu__item
+            a(href="").category-menu__link Tra cứu điểm thi
+          li.category-menu__item
+            a(href="").category-menu__link Liên hệ
+          li.category-menu__item
+            a(href="").category-menu__link Tuyển dụng
+      li.nav-menu__item
+        a(href="").nav-menu__link.text-capitalize Chương Trình sau đại học
+        +submenu
+      li.nav-menu__item
+        a(href="").nav-menu__link.text-capitalize Chương Trình sau đại học
+        +submenu
+        +language-mobile

@@ -5,7 +5,9 @@
 	margin: 0;
 	padding: 0;
 }
-
+#root {
+	overflow: hidden;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -13,7 +15,12 @@ body {
 	font-size: 18px;
 	color: $color-secondary-light;
 }
-
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0;
+	vertical-align: middle;
+}
 .container {
 	width: 100%;
 	padding-right: 15px;
@@ -43,5 +50,10 @@ body {
 @media (min-width: 1200px) {
 	.container {
 		max-width: 1140px;
+	}
+}
+@media (min-width: 1500px) {
+	.container {
+		max-width: 1440px;
 	}
 }

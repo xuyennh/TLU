@@ -54,7 +54,7 @@
 				classBackButton: 'nav-back-button',
 				backButton: '<a href="#">Quay lại</a>',
 				nameLink: '<a href="#">{{nameLink}}</a>',
-				classlink: 'nav-link',
+				classlink: 'sub-menu__name',
 				classActive: 'active',
 				easing: 'ease',
 				arrow: '<span class="nav-arrow"></span>'
@@ -94,7 +94,7 @@
 			const { opts } = this;
 			const innerHtml = el.innerHTML;
 			el.innerHTML = `
-            <div class="nav-wrapper-inner" style="overflow: hidden; position: relative">
+            <div class="nav-wrapper-inner">
                 ${innerHtml}
             </div>
           `;
@@ -119,7 +119,7 @@
 				});
 				menu.parentNode.wilStyles({
 					width: `${opts.menuWidth * (level + 1)}px`,
-					height: '100vh'
+					height: 'auto'
 				});
 				setTimeout(() => (menu.parentNode.style.height = height), opts.duration);
 			});
@@ -171,7 +171,6 @@
 				this.menuTranslate(menus, this.level, `${subMenuHeight}px`);
 				event.currentTarget.parentNode.wilAddClass(opts.classActive);
 				subMenu.style.visibility = 'visible';
-
 				let { nameLink } = opts;
 				if (nameLink.indexOf('{{nameLink}}') !== -1) {
 					nameLink = nameLink.replace(/{{nameLink}}/g, event.currentTarget.innerText);
@@ -205,7 +204,7 @@
 		arrow: '<span class="nav-arrow"></span>',
 		backButton: '<a href="#">Quay lại</a>',
 		nameLink: '<a href="#">{{nameLink}}</a>',
-		classlink: 'nav-link',
+		classlink: 'sub-menu__name',
 		classBackButton: 'nav-back-button'
 	});
 
@@ -216,11 +215,24 @@
 			nav.classList.toggle('nav-actives');
 			burger.classList.toggle('toggle');
 		});
+		//submenu
 		const itemSubmenuEls = [ ...document.querySelectorAll('.sub-menu__link') ];
 		itemSubmenuEls.forEach((itemSubmenuEl) => {
 			itemSubmenuEl.addEventListener('click', (event) => {
 				event.preventDefault();
-				console.log(event.currentTarget);
+				const submenu = event.currentTarget.nextElementSibling;
+				submenu && submenu.classList.toggle('sub-menu-actives');
+			});
+		});
+		//tuyensinh
+		const futureCarrerItemEls = [ ...document.querySelectorAll('.future-carrer__link') ];
+		futureCarrerItemEls.forEach((futureCarrerItemEl) => {
+			futureCarrerItemEl.addEventListener('click', (event) => {
+				event.preventDefault();
+				const futureCarrerDetails = event.currentTarget.nextElementSibling;
+				const plusActive = event.currentTarget;
+				futureCarrerDetails && futureCarrerDetails.classList.toggle('future-carrer__detail-active');
+				plusActive && plusActive.classList.toggle('plus-active');
 			});
 		});
 	};

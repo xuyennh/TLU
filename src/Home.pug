@@ -1,0 +1,20 @@
+extends _core/layout
+
+include layouts/header/header
+include layouts/carousel_home/carousel_home
+include layouts/contact_us/contact_us
+include layouts/footer/footer
+include ./components/news/news
+include ./components/program_study/program_study
+
+block header
+  +header
+  +carousel-home
+block content
+  +program-study
+  +news
+  +contact-us
+block footer
+  +footer
+
+

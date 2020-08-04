@@ -1,0 +1,6 @@
+mixin banner(props = {})
+  .banner.banner--bg
+    .banner__bg.bg-cover(style=`background-image: url('${props.image}')`)
+    .overlay
+    .container
+      .banner__title= props.title

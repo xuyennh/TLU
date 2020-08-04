@@ -34,6 +34,9 @@
 .program-study__content {
 	padding-top: 111px;
 	// padding-bottom: 140px;
+	@include media('<1500px') {
+		padding-top: 80px;
+	}
 	@include media('<sm') {
 		padding-top: 50px;
 		// padding-bottom: 80px;
@@ -57,9 +60,11 @@
 	font-size: 42px;
 	font-weight: $font-bold;
 	color: $color-secondary-light;
+	@include media('<1500px') {
+		font-size: 30px;
+	}
 	@include media('<md') {
 		padding: 25px 0;
-		font-size: 30px;
 	}
 }
 .program-study__all {

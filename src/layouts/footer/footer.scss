@@ -1,0 +1,125 @@
+.footer {
+	background-color: $color-secondary;
+	padding-top: 80px;
+}
+.footer__name {
+	color: $color-white;
+	font-size: 27px;
+	font-weight: $font-bold;
+	padding-bottom: 45px;
+	@include media('<sm') {
+		font-size: 22px;
+		padding-bottom: 35px;
+		padding-left: 25px;
+	}
+}
+.footer__content {
+	display: flex;
+	padding-bottom: 67px;
+	@include media('<sm') {
+		padding-left: 25px;
+		padding-bottom: 50px;
+	}
+}
+.footer__content-left {
+	flex: 0 0 50%;
+	max-width: 50%;
+	display: flex;
+	justify-content: space-between;
+	@include media('<sm') {
+		max-width: 0;
+		visibility: hidden;
+	}
+}
+.footer__content-right {
+	flex: 0 0 50%;
+	max-width: 50%;
+	display: flex;
+	justify-content: center;
+	@include media('<sm') {
+		max-width: 100%;
+	}
+}
+.footer__item {
+	@include media('<md') {
+		padding-right: 10px;
+	}
+}
+.footer__item li {
+	list-style: none;
+	padding-bottom: 10px;
+}
+.footer__item a {
+	color: $color-secondary-dark;
+	font-size: 14px;
+	font-weight: $font-Demibold;
+}
+.footer__infor-item {
+	display: flex;
+	padding-bottom: 20px;
+	font-size: 14px;
+	color: $color-secondary-dark;
+	@include media('<sm') {
+		flex-direction: column;
+		font-size: 15px;
+	}
+}
+.footer__infor-title {
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+	@include media('<sm') {
+		max-width: 100%;
+		padding-bottom: 7px;
+	}
+}
+.footer__infor-item span {
+	flex: 0 0 66.666667%;
+	max-width: 66.666667%;
+	@include media('<sm') {
+		max-width: 100%;
+		color: #e5e8f8;
+	}
+}
+.footer__copyright {
+	padding-bottom: 30px;
+	@include media('<sm') {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+}
+.footer__copyright-content {
+	display: flex;
+	padding-top: 30px;
+	justify-content: space-between;
+	@include media('<sm') {
+		flex-direction: column;
+		padding-top: 0;
+	}
+}
+.footer__copyright-text {
+	font-size: 14px;
+	color: #5d6385;
+	@include media('<sm') {
+		order: 2;
+		border-top: 1px solid #979797;
+		padding-top: 16px;
+	}
+}
+.footer__copyright-icon i {
+	color: $color-white;
+	padding-left: 25px;
+	@include media('<sm') {
+		padding: 0;
+		padding-right: 25px;
+		padding-bottom: 24px;
+		order: 1;
+	}
+}
+.divider {
+	width: 100%;
+	background-color: #979797;
+	height: 1px;
+	@include media('<sm') {
+		display: none;
+	}
+}

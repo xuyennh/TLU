@@ -1,0 +1,38 @@
+.fields-bg {
+	background-color: $color-secondary;
+	@include media('<md') {
+		padding-top: 70px;
+	}
+}
+
+.fields__desc {
+	font-size: 42px;
+	font-size: $font-bold;
+	color: $color-white;
+	padding-bottom: 80px;
+	@include media('<md') {
+		font-size: 30px;
+		padding-bottom: 20px;
+	}
+}
+.field__name {
+	font-size: 20px;
+	font-weight: $font-bold;
+	color: $color-white;
+	padding-top: 22px;
+}
+.field__text {
+	font-size: 14px;
+	font-weight: $font-medium;
+	color: $color-secondary-dark;
+	padding-bottom: 20px;
+}
+.field__link {
+	color: $color-primary;
+	display: block;
+	font-size: 15px;
+	font-weight: $font-bold;
+	@include media('<md') {
+		padding-bottom: 64px;
+	}
+}
