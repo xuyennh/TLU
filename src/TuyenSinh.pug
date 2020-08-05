@@ -9,6 +9,9 @@ include ./components/video-iframe/video-iframe
 include ./components/carousel/carousel
 include ./components/future-carrer/future-carrer
 include ./components/fields/fields
+include ./components/register-guild/register-guild
+include ./components/infor-document-tlu/infor-document-tlu
+include ./components/course-fee/course-fee
 
 block header
   +header
@@ -25,7 +28,12 @@ block content
   })
   .container
     .section-page
-      +row.reserve-column.pt-35
+      +row.reserve-row.pt-35
+        +col({
+          cols: [12,12,12,6]
+        })
+            .image-center
+              img(src="./assets/images/item1_tuyensinh.png", alt="")
         +col({
           cols: [12,12,12,6]
         })
@@ -35,11 +43,6 @@ block content
               desc: 'Kiến trúc trong xây dựng không phải là một khái niệm mới lạ. Tuy nhiên, kiến trúc trong giáo dục lại là một khái niệm mới mẻ với nhiều người. Chúng tôi đã thiết kế riêng cho ngôi trường một kiến trúc độc đáo, sáng tạo, sinh viên có thể học tập mọi lúc mọi nơi. Với hệ thống cơ sở vật luôn được cập nhật, người học được phát triển toàn diện từ kiến thức chuyên môn tới kĩ năng thực hành mang tính ứng dụng, phục vụ mọi nhu cầu của công việc thời đại mới. Tại đây, chúng tôi gọi đó là “Kiến trúc thay đổi tư duy”',
               link: 'khám phá cơ sở vật chất'
             })
-        +col({
-          cols: [12,12,12,6]
-        })
-            .image-center
-              img(src="./assets/images/item1_tuyensinh.png", alt="")
       +row.pt-104.pt-sm-70
         +col({
           cols: [12,12,12,6]
@@ -60,7 +63,13 @@ block content
                   number: '13.6',
                   desc: 'Sinh viên ra trường làm việc trong doanh nghiệp nước ngoài'
               })
-      +row.pt-180.reserve-column.pt-sm-70
+      +row.pt-180.reserve-row.pt-sm-70
+        +col({
+          cols: [12,12,12,6]
+        })
+            +video-iframe({
+              video: 'https://www.youtube.com/embed/tgbNymZ7vqY'
+            })
         +col({
           cols: [12,12,12,6]
         })
@@ -69,12 +78,6 @@ block content
               title: 'Đô thị đại học & hệ sinh thái giáo dục',
               desc: 'Môi trường học tập thoải mái, truyền cảm hứng và sự sáng tạo cho người học, đáp ứng mọi nhu cầu học tập - nghỉ ngơi - giải trí của sinh viên. Máy móc và công nghệ hỗ trợ tối đa cho việc học và thực hành của sinh viên',
               link: 'Đời sống sinh viên Thăng Long'
-            })
-        +col({
-          cols: [12,12,12,6]
-        })
-            +video-iframe({
-              video: 'https://www.youtube.com/embed/tgbNymZ7vqY'
             })
       +row.pt-214.pt-sm-70
         +col({
@@ -123,3 +126,20 @@ block content
         +col({
           cols:[12,12,12,5]
         })
+            +register-guild({
+              text: 'Hướng dẫn đăng kí',
+              type: 'Xét điểm thi THPT Quốc gia 2020',
+              desc: 'Điền mã trường Đại học Thăng Long DTL và mã ngành Đào tạo vào Hồ sơ dự thi THPT Quốc gia',
+              detail: 'Thông báo chi tiết',
+              type1: 'Xét tuyển học bạ',
+              desc1: 'Trường Đại học Thăng Long tiến hành xét tuyển học bạ đối với 2 chuyên ngành Khoa học sức khoẻ và Thanh nhạc.',
+              link: 'Khoa Âm nhạc ứng dụng'
+            })
+        +col({
+          cols:[12,12,12,4]
+        })
+            +infor-document-tlu
+        +col({
+          cols:[12,12,12,3]
+        })
+            +course-fee

@@ -235,6 +235,13 @@
 				plusActive && plusActive.classList.toggle('plus-active');
 			});
 		});
+		const selectboxEl = document.querySelector('.selectbox');
+		const buttong = document.querySelector('.butong');
+		buttong.addEventListener('click', (event) => {
+			event.preventDefault();
+			const { value } = selectboxEl;
+			console.log(value);
+		});
 	};
 
 	navSlide();

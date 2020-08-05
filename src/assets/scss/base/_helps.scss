@@ -80,10 +80,8 @@
 	background-color: #000;
 	opacity: 0.4;
 }
-.reserve-column {
-	@include media('<md') {
-		flex-direction: column-reverse;
-	}
+.reserve-row {
+	flex-direction: row-reverse;
 }
 .flex-column {
 	display: flex;

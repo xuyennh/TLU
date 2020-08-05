@@ -1,0 +1,35 @@
+include ../selectfield/selectfield
+mixin course-fee
+  .course-fee
+    .course-fee__text Xem học phí khóa học
+    -
+      const data = [
+        {
+          label: 'Chọn Khoa',
+          value: '',
+          selected: true,
+          disabled: true,
+        },
+        {
+          label: 'Khoa xã hội & Nhân Văn',
+          value: '10.000.000',
+          selected: false,
+          disabled: false,
+        },
+        {
+          label: 'Khoa giáo dục thể chất',
+          value: '22.000.000',
+          selected: false,
+          disabled: false
+        },
+        {
+          label: 'Khoa tin học',
+          value: '13.780.000',
+          selected: false,
+          disabled: false
+        }
+      ]
+    +selectfield({
+      data
+    })
+  button.butong click

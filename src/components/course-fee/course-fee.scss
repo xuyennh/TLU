@@ -1,0 +1,25 @@
+.course-fee__text {
+	font-weight: $font-Demibold;
+	font-size: 14px;
+	color: $color-dark-2;
+	padding-bottom: 20px;
+}
+
+select {
+	margin-bottom: 1em;
+	padding: .25em;
+	border: 0;
+	border-bottom: 2px solid currentcolor;
+	letter-spacing: .15em;
+	border-radius: 0;
+	&:focus,
+	&:active {
+		outline: 0;
+		border-bottom-color: red;
+	}
+}
+option {
+	font-size: 20px;
+	font-weight: $font-bold;
+	color: $color-dark-2;
+}
