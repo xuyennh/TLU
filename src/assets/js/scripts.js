@@ -236,11 +236,12 @@
 			});
 		});
 		const selectboxEl = document.querySelector('.selectbox');
-		const buttong = document.querySelector('.butong');
-		buttong.addEventListener('click', (event) => {
+		const priceEl = document.querySelector('.course-fee__price');
+		selectboxEl.ad;
+		selectboxEl.addEventListener('change', (event) => {
 			event.preventDefault();
 			const { value } = selectboxEl;
-			console.log(value);
+			priceEl.innerHTML = value;
 		});
 	};
 

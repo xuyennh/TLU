@@ -124,7 +124,7 @@ block content
     .container
       +row
         +col({
-          cols:[12,12,12,5]
+          cols:[12,12,6,5]
         })
             +register-guild({
               text: 'Hướng dẫn đăng kí',
@@ -136,10 +136,11 @@ block content
               link: 'Khoa Âm nhạc ứng dụng'
             })
         +col({
-          cols:[12,12,12,4]
+          cols:[12,12,6,4]
         })
             +infor-document-tlu
         +col({
-          cols:[12,12,12,3]
+          cols:[12,12,6,3]
         })
-            +course-fee
+            .mt-auto
+              +course-fee
