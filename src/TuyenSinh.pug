@@ -1,6 +1,7 @@
 extends _core/layout
 
 include layouts/header/header
+include layouts/footer/footer
 include ./components/banner/banner
 include ./components/breadcrumb/breadcrumb
 include ./components/whychooseTLU/whychooseTLU
@@ -13,6 +14,7 @@ include ./components/register-guild/register-guild
 include ./components/infor-document-tlu/infor-document-tlu
 include ./components/course-fee/course-fee
 include ./components/post/post
+include ./components/form-question/form-question
 
 block header
   +header
@@ -185,3 +187,9 @@ block content
                 desc: 'Nhận đơn xin nghỉ học tạm thời và bảo lưu kết quả học tập HKI, năm học 2019 - 2020'
               })
           a(href="").post__link.dl-mb Tất cả tin tức
+  .section-page
+    .container
+      +row.justify-center
+        +form-question
+block footer
+  +footer
