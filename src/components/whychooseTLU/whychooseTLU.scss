@@ -19,7 +19,7 @@
 	font-size: 42px;
 	font-weight: $font-bold;
 	color: $color-dark-2;
-	@include media('<lg') {
+	@include media('<=1500px') {
 		font-size: 30px;
 	}
 }

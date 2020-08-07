@@ -12,6 +12,7 @@ include ./components/fields/fields
 include ./components/register-guild/register-guild
 include ./components/infor-document-tlu/infor-document-tlu
 include ./components/course-fee/course-fee
+include ./components/post/post
 
 block header
   +header
@@ -144,3 +145,43 @@ block content
         })
             .mt-auto
               +course-fee
+  .post
+      .container
+        +row
+          .post__header
+            .post__text Tin tuyển sinh
+            a(href="").post__link.dl-pc Tất cả tin tức
+        +row
+          +col({
+            cols: [12,12,6,3]
+          })
+              +post({
+                img: './assets/images/tintuyensinh.png',
+                title: 'Khoa Kinh tế - Quản lí',
+                desc: 'Trải nghiệm Ẩm thực Hàn Quốc miễn phí tại Đại học Thăng Long'
+              })
+          +col({
+            cols: [12,12,6,3]
+          })
+              +post({
+                img: './assets/images/tintuyensinh.png',
+                title: 'Khoa Kinh tế - Quản lí',
+                desc: 'Tổ chức thành công Hội nghị Khoa học quốc gia lần thứ XI “Nghiên cứu cơ bản và ứng dụng công nghệ thông tin” Fair’11'
+              })
+          +col({
+            cols: [12,12,6,3]
+          })
+              +post({
+                img: './assets/images/tintuyensinh.png',
+                title: 'Khoa Kinh tế - Quản lí',
+                desc: 'Hội thi hùng biện tiếng Anh “Nhà Lãnh Đạo Toàn Cầu”'
+              })
+          +col({
+            cols: [12,12,6,3]
+          })
+              +post({
+                img: './assets/images/tintuyensinh.png',
+                title: 'Khoa Kinh tế - Quản lí',
+                desc: 'Nhận đơn xin nghỉ học tạm thời và bảo lưu kết quả học tập HKI, năm học 2019 - 2020'
+              })
+          a(href="").post__link.dl-mb Tất cả tin tức

@@ -2,6 +2,9 @@
 	@include media('<md') {
 		padding-top: 50px;
 	}
+	@include media('<sm') {
+		padding-bottom: 80px;
+	}
 }
 .course-fee__text {
 	font-weight: $font-Demibold;

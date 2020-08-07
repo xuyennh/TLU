@@ -99,3 +99,16 @@
 		text-align: center;
 	}
 }
+.dl-pc {
+	@include media('<sm') {
+		display: none;
+	}
+}
+.dl-mb {
+	display: none;
+	@include media('<sm') {
+		display: block;
+		padding-left: 15px;
+		padding-top: 30px;
+	}
+}

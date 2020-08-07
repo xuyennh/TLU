@@ -10,8 +10,10 @@
 	font-size: $font-bold;
 	color: $color-white;
 	padding-bottom: 80px;
-	@include media('<md') {
+	@include media('<=1500px') {
 		font-size: 30px;
+	}
+	@include media('<md') {
 		padding-bottom: 20px;
 	}
 }
