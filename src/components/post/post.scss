@@ -50,4 +50,7 @@
 	@include media('<=sm') {
 		padding-bottom: 15px;
 	}
+	@include media('>xs','<sm') {
+		text-align: center;
+	}
 }
