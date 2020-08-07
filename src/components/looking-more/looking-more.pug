@@ -1,0 +1,11 @@
+mixin looking-more(props= {})
+  .looking-more
+    a(href="").looking-more__item
+      img(src=props.img, alt="")
+      figcaption.looking-more__text= props.text
+    a(href="").looking-more__item
+      img(src=props.img1, alt="")
+      figcaption.looking-more__text= props.text1
+    a(href="").looking-more__item
+      img(src=props.img2, alt="")
+      figcaption.looking-more__text= props.text2

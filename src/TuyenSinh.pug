@@ -15,6 +15,7 @@ include ./components/infor-document-tlu/infor-document-tlu
 include ./components/course-fee/course-fee
 include ./components/post/post
 include ./components/form-question/form-question
+include ./components/looking-more/looking-more
 
 block header
   +header
@@ -191,5 +192,13 @@ block content
     .container
       +row.justify-center
         +form-question
+  +looking-more({
+    img: './assets/images/seemore1.png',
+    img1: './assets/images/seemore.png',
+    img2: './assets/images/seemore2.png',
+    text: 'Doanh nghiệp',
+    text1: 'Đại Học Thăng Long',
+    text2: 'Câu hỏi thường gặp'
+  })
 block footer
   +footer

@@ -1,0 +1,40 @@
+.looking-more {
+	display: flex;
+	@include media('<md') {
+		flex-direction: column;
+	}
+}
+.looking-more__item {
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+	position: relative;
+	@include media('<md') {
+		flex: 0 0 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+}
+.looking-more__text {
+	font-size: 20px;
+	font-weight: $font-bold;
+	color: $color-white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	@include media('<lg') {
+		font-size: 16px;
+	}
+}
+
+.looking-more__text:after {
+	content: '';
+	width: 7px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	height: 7px;
+	border-top: 2px solid $color-white;
+	border-left: 2px solid $color-white;
+	transform: rotate(135deg);
+}
