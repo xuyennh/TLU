@@ -235,6 +235,14 @@
 				plusActive && plusActive.classList.toggle('plus-active');
 			});
 		});
+		const selectboxEl = document.querySelector('.selectbox');
+		const priceEl = document.querySelector('.course-fee__price');
+		selectboxEl.ad;
+		selectboxEl.addEventListener('change', (event) => {
+			event.preventDefault();
+			const { value } = selectboxEl;
+			priceEl.innerHTML = value;
+		});
 	};
 
 	navSlide();

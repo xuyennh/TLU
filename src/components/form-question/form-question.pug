@@ -1,0 +1,30 @@
+include ../button/button
+
+mixin form-question
+  form(action="").form-question
+    .form-question__left
+      .form-question__title Bạn có thắc mắc? Gửi câu hỏi tới chúng tôi để được giải đáp
+      .form-question-group
+        label(for="") Họ và tên*
+        input(type="text")
+      .form-question-group
+        label(for="") Email*
+        input(type="text").form-question__input
+      .form-question-group
+        label(for="") Câu hỏi
+        textarea.form-question__question
+      .form-question__submit
+        +button({
+          buttonText: 'Gửi ngay'
+        })
+    .form-question__right
+      .form-question__title Phòng tuyển sinh Đại học Thăng Long
+      .form-question__item.pt-30
+        .form-question__name Hotline
+        .form-question__desc (84-24) 38 58 73 46
+      .form-question__item
+        .form-question__name Email
+        .form-question__desc info@thanglong.edu.vn
+      .form-question__item
+        .form-question__name Địa chỉ
+        .form-question__desc Tầng 4 - Nhà A, Trường Đại học Thăng Long, Đường Nghiêm Xuân Yêm, Đại Kim, Hoàng Mai, Hà Nội

@@ -33,3 +33,13 @@
 .ml-5 {
 	margin-left: 5px !important;
 }
+.mt-auto {
+	margin-top: auto !important;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.pt-30 {
+	padding-top: 30px;
+}

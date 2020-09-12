@@ -1,0 +1,51 @@
+.post-bg {
+	background-color: #f5f5f5;
+	padding: 100px 0;
+	@include media('<sm') {
+		padding-top: 60px;
+	}
+}
+.post__header {
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	padding-bottom: 20px;
+	width: 100%;
+	justify-content: space-between;
+}
+.post__title {
+	font-size: 12px;
+	font-weight: $font-Demibold;
+	color: $color-dark-3;
+	padding: 10px 0;
+}
+.post__desc {
+	font-size: 16px;
+	font-weight: $font-bold;
+	color: $color-dark-2;
+}
+.post__text {
+	color: $color-dark-2;
+}
+.post__link {
+	color: $color-primary;
+}
+.post__link:after {
+	content: '';
+	width: 6px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	height: 6px;
+	border-top: 2px solid $color-primary;
+	border-left: 2px solid $color-primary;
+	transform: rotate(135deg);
+}
+.post {
+	@include media('<=sm') {
+		padding-bottom: 15px;
+	}
+	@include media('>xs','<sm') {
+		text-align: center;
+	}
+}

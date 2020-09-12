@@ -80,10 +80,8 @@
 	background-color: #000;
 	opacity: 0.4;
 }
-.reserve-column {
-	@include media('<md') {
-		flex-direction: column-reverse;
-	}
+.reserve-row {
+	flex-direction: row-reverse;
 }
 .flex-column {
 	display: flex;
@@ -100,4 +98,20 @@
 	@include media('<md') {
 		text-align: center;
 	}
+}
+.dl-pc {
+	@include media('<sm') {
+		display: none;
+	}
+}
+.dl-mb {
+	display: none;
+	@include media('<sm') {
+		display: block;
+		padding-left: 15px;
+		padding-top: 30px;
+	}
+}
+.justify-center {
+	justify-content: center;
 }

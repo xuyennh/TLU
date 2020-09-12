@@ -1,0 +1,43 @@
+.register-guild {
+	color: $color-dark-2;
+	border-right: 1px solid $color-hr;
+	padding-right: 20px;
+	@include media('<sm') {
+		padding-top: 80px;
+		border: 0;
+		border-bottom: 1px solid $color-hr;
+		padding-bottom: 40px;
+	}
+}
+.register-guild__text {
+	padding-bottom: 10px;
+}
+.register-guild__type {
+	font-weight: $font-bold;
+	font-size: 16px;
+	padding-top: 30px;
+	@include media('<sm') {
+		padding-top: 20px;
+	}
+}
+.register-guild__detail {
+	color: $color-secondary-light;
+	padding-top: 10px;
+	font-size: 15px;
+	display: block;
+}
+
+.register-guild__detail::after {
+	content: '';
+	width: 6px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	height: 6px;
+	border-top: 2px solid $color-dark-2;
+	border-left: 2px solid $color-dark-2;
+	transform: rotate(135deg);
+}
+.register-guild__desc {
+	font-size: 16px;
+}

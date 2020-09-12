@@ -5,13 +5,10 @@
 	}
 }
 
-.fields__desc {
-	font-size: 42px;
-	font-size: $font-bold;
+.fields-title {
 	color: $color-white;
 	padding-bottom: 80px;
 	@include media('<md') {
-		font-size: 30px;
 		padding-bottom: 20px;
 	}
 }

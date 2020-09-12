@@ -1,0 +1,5 @@
+mixin selectfield(props = {})
+  select.selectbox(data-selected='')
+    each item in props.data
+      option(value=item.value)&attributes(item.disabled ? {disabled: 'disabled'} : {}, item.selected ? {selected: 'selected'} : {})= item.label
+

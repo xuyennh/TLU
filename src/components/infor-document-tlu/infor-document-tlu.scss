@@ -1,0 +1,44 @@
+.infor-document-tlu {
+	padding: 20px;
+	padding-top: 0;
+	@include media('<sm') {
+		padding: 0;
+		padding-top: 40px;
+	}
+}
+.infor-document-tlu__title {
+	color: $color-dark-2;
+	padding-bottom: 40px;
+	@include media('<sm') {
+		padding-bottom: 30px;
+	}
+}
+.infor-document-tlu__content {
+	display: flex;
+}
+
+.infor-document-tlu__img {
+	padding-bottom: 20px;
+}
+
+.infor-document-tlu__item {
+	flex: 0 0 50%;
+	max-width: 50%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding-right: 30px;
+	@include media('<sm') {
+		padding-right: 20px;
+	}
+}
+
+.infor-document-tlu__text {
+	font-size: 16px;
+	font-weight: $font-bold;
+	color: $color-dark-2;
+	margin-top: auto;
+	@include media('<sm') {
+		font-size: 14px;
+	}
+}
