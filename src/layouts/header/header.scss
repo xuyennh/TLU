@@ -19,3 +19,8 @@
 		display: none;
 	}
 }
+.nav-pc {
+	@include media('>md') {
+		padding-left: 50px;
+	}
+}
